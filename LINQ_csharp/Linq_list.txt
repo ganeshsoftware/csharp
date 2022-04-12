@@ -1,0 +1,131 @@
+1) Restriction Operators
+------------------------
+Where 
+
+01) Linq001_Restriction_Where_Simple_1.cs  
+02) Linq002_Restriction_Where_Simple_2.cs  
+03) Linq003_Restriction_Where_Simple_3.cs  
+04) Linq004_Restriction_Where_Drilldown.cs  
+05) Linq005_Restriction_Where_Indexed.cs  
+
+
+2) Projection Operators
+-----------------------
+Select, SelectMany
+
+06) Linq006_Projection_Select_Simple_1.cs
+07) Linq007_Projection_Select_Simple_2.cs 
+08) Linq008_Projection_Select_Transformation.cs
+09) Linq009_Projection_Select_AnonymousTypes_1.cs
+10) Linq010_Projection_Select_AnonymousTypes_2.cs
+11) Linq011_Projection_Select_AnonymousTypes_3.cs
+12) Linq012_Projection_Select_Indexed.cs
+13) Linq013_Projection_Select_Filtered.cs
+14) Linq014_Projection_SelectMany_Compound_from_1.cs
+15) Linq015_Projection_SelectMany_Compound_from_2.cs
+16) Linq016_Projection_SelectMany_Compound_from_3.cs
+17) Linq017_Projection_SelectMany_from_Assignment.cs
+18) Linq018_Projection_SelectMany_Multiple_from.cs
+19) Linq019_Projection_SelectMany_Indexed.cs
+
+
+3) Partitioning Operators 
+-------------------------
+20) Linq020_Partitioning_Take_Simple.cs
+21) Linq021_Partitioning_Take_Nested.cs
+22) Linq022_Partitioning_Skip_Simple.cs
+23) Linq023_Partitioning_Skip_Nested.cs
+24) Linq024_Partitioning_TakeWhile_Simple.cs
+25) Linq025_Partitioning_TakeWhile_Indexed.cs
+26) Linq026_Partitioning_SkipWhile_Simple.cs
+27) Linq027_Partitioning_SkipWhile_Indexed.cs
+
+
+4) Ordering Operators
+----------------------
+28) Linq028_Ordering_OrderBy_Simple_1.cs
+29) Linq029_Ordering_OrderBy_Simple_2.cs
+30) Linq030_Ordering_OrderBy_Simple_3.cs
+31) Linq031_Ordering_OrderBy_Comparer.cs
+32) Linq032_Ordering_Simple_1.cs
+33) Linq033_Ordering_OrderByDescending_Simple_2.cs
+34) Linq034_Ordering_OrderByDescending_Comparer.cs
+35) Linq035_Ordering_ThenBy_Simple.cs
+36) Linq036_Ordering_ThenBy_Comparer.cs
+37) Linq037_Ordering_ThenByDescending_Simple.cs
+38) Linq038_Ordering_ThenByDescending_Comparer.cs
+39) Linq039_Ordering_Reverse.cs
+
+
+5) Conversion Operators
+-----------------------
+40) Linq040_Conversion_ToArray.cs
+41) Linq041_Conversion_ToList.cs
+42) Linq042_Conversion_ToDictionary.cs
+43) Linq043_Conversion_OfType.cs
+
+
+6) Aggregate Operators
+----------------------
+44) Linq044_Aggregate_Count_Simple.cs
+45) Linq045_Aggregate_Count_Conditional.cs
+46) Linq046_Aggregate_Count_Nested.cs
+47) Linq047_Aggregate_Count_Grouped.cs
+48) Linq048_Aggregate_Sum_Simple.cs
+49) Linq049_Aggregate_Sum_Projection.cs
+50) Linq050_Aggregate_Sum_Grouped.cs
+51) Linq051_Aggregate_Min_Simple.cs
+52) Linq052_Aggregate_Min_Projection.cs
+53) Linq053_Aggregate_Min_Grouped.cs
+54) Linq054_Aggregate_Min_Elements.cs
+55) Linq055_Aggregate_Max_Simple.cs
+56) Linq056_Aggregate_Max_Projection.cs
+57) Linq057_Aggregate_Max_Grouped.cs
+58) Linq058_Aggregate_Max_Elements.cs
+59) Linq059_Aggregate_Average_Simple.cs
+60) Linq060_Aggregate_Average_Projection.cs
+61) Linq061_Aggregate_Average_Grouped.cs
+62) Linq062_Aggregate_Aggregate_Simple.cs
+63) Linq063_Aggregate_Aggregate_Seed.cs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

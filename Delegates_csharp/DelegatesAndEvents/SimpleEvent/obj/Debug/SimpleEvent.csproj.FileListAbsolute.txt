@@ -1,0 +1,7 @@
+D:\Chapter 6\Chapter 6\Sample\SimpleEvent\bin\Debug\WindowsApplication1.exe
+D:\Chapter 6\Chapter 6\Sample\SimpleEvent\bin\Debug\WindowsApplication1.pdb
+D:\Chapter 6\Chapter 6\Sample\SimpleEvent\obj\Debug\SimpleEvent.Form1.resources
+D:\Chapter 6\Chapter 6\Sample\SimpleEvent\obj\Debug\SimpleEvent.csproj.GenerateResource.cache
+D:\Chapter 6\Chapter 6\Sample\SimpleEvent\obj\Debug\SimpleEvent.csproj.CoreCompileInputs.cache
+D:\Chapter 6\Chapter 6\Sample\SimpleEvent\obj\Debug\WindowsApplication1.exe
+D:\Chapter 6\Chapter 6\Sample\SimpleEvent\obj\Debug\WindowsApplication1.pdb

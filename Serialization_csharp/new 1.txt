@@ -1,0 +1,107 @@
+AJEP7811NG
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+
+    
+    function onsweetselected(idd)
+    {
+        alert(idd);
+        // logic to set the IsActive= false / true for that particular object.
+        // linq query to set that.
+    }
+
+    function Addtocart(cb, cd)
+    {
+        //alert(cd + "Clicked = " + cb.checked);
+        $.ajax({
+            url: 'Home\Index',
+            data: {id:cd}
+        }).done(function()
+        {
+            
+        });
+    }
+</script>
+
+    <p>
+        <select id="combo" class="combo">
+            <option value="Mobile">Mobile</option>
+            <option value="Television">Television</option>
+            <option value="Fridge">Fridge</option>
+            <option value="Computers">Computers</option>
+        </select>
+
+        <img src=" ~/images/CartTrans.png" alt="Cart" />
+
+    </p>
+
+    <p>
+
+    </p>
+
+ 
+<div id="maincontent" style="margin-left:20px;margin-right:20px;height:400px;">
+       
+    <form method="post">
+        @foreach (var v in ViewBag.theshopitems)
+        {
+
+            <div id="leftcontent" style="width:33.33%;height:400px;float:left;padding-right:31px;padding-top:5px;">
+
+                <div id="itemimage" style="width:100%;height:250px;border:1px solid orange;">
+                    <img src="@v.imageURL" style="width:100%;height:250px;" />
+                </div>
+                <div id="itemdetail" style="width:100%;height:150px;">
+                    <div class="itemDetails">
+
+                        Item ID: <span class="itemDetailDescription">@v.Id</span>
+                        <br />
+                        Item Name: <span class="itemDetailDescription">@v.Name</span>
+                        <br />
+                        Category: <span class="itemDetailDescription">@v.Category</span>
+                        <br />
+                        Brand: <span class="itemDetailDescription">@v.Brand</span>
+                        <br />
+                        Price: <span class="itemDetailDescription">@v.Price</span>
+                        <br />
+                        Description:
+                        <br />
+                        <span class="itemDetailDescription">@v.Description</span>
+                        <br />
+
+                        @* @Html.CheckBox("isChecked",new { id = @v.Id }) *@
+
+                        <input type="button" onclick="Addtocart(this,@v.Id)" value="Add to Cart"/>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        }
+        <p>
+
+        </p>
+        <p>
+
+        </p>
+        <p>
+
+        </p>
+        <p>
+
+        </p>
+
+    </form>
+    
+</div>
+
+
+
+

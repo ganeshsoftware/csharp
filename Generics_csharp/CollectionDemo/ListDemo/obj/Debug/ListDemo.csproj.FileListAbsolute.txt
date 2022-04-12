@@ -1,0 +1,15 @@
+D:\Ch10\Ch10\CollectionDemo\ListDemo\bin\Debug\ListDemo.exe
+D:\Ch10\Ch10\CollectionDemo\ListDemo\bin\Debug\ListDemo.pdb
+D:\Ch10\Ch10\CollectionDemo\ListDemo\obj\Debug\ListDemo.csprojResolveAssemblyReference.cache
+D:\Ch10\Ch10\CollectionDemo\ListDemo\obj\Debug\ListDemo.Properties.Resources.resources
+D:\Ch10\Ch10\CollectionDemo\ListDemo\obj\Debug\ListDemo.csproj.GenerateResource.cache
+D:\Ch10\Ch10\CollectionDemo\ListDemo\obj\Debug\ListDemo.csproj.CoreCompileInputs.cache
+D:\Ch10\Ch10\CollectionDemo\ListDemo\obj\Debug\ListDemo.exe
+D:\Ch10\Ch10\CollectionDemo\ListDemo\obj\Debug\ListDemo.pdb
+D:\csharp\csharp_generics\CollectionDemo\ListDemo\bin\Debug\ListDemo.exe
+D:\csharp\csharp_generics\CollectionDemo\ListDemo\bin\Debug\ListDemo.pdb
+D:\csharp\csharp_generics\CollectionDemo\ListDemo\obj\Debug\ListDemo.Properties.Resources.resources
+D:\csharp\csharp_generics\CollectionDemo\ListDemo\obj\Debug\ListDemo.csproj.GenerateResource.cache
+D:\csharp\csharp_generics\CollectionDemo\ListDemo\obj\Debug\ListDemo.csproj.CoreCompileInputs.cache
+D:\csharp\csharp_generics\CollectionDemo\ListDemo\obj\Debug\ListDemo.exe
+D:\csharp\csharp_generics\CollectionDemo\ListDemo\obj\Debug\ListDemo.pdb

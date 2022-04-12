@@ -1,0 +1,7 @@
+E:\csharp\xml_csharp\xml_xsd\xml_xsd_02\XmlXsdClassUsage\bin\Debug\XmlXsdClassUsage.exe.config
+E:\csharp\xml_csharp\xml_xsd\xml_xsd_02\XmlXsdClassUsage\bin\Debug\XmlXsdClassUsage.exe
+E:\csharp\xml_csharp\xml_xsd\xml_xsd_02\XmlXsdClassUsage\bin\Debug\XmlXsdClassUsage.pdb
+E:\csharp\xml_csharp\xml_xsd\xml_xsd_02\XmlXsdClassUsage\obj\Debug\XmlXsdClassUsage.csproj.AssemblyReference.cache
+E:\csharp\xml_csharp\xml_xsd\xml_xsd_02\XmlXsdClassUsage\obj\Debug\XmlXsdClassUsage.csproj.CoreCompileInputs.cache
+E:\csharp\xml_csharp\xml_xsd\xml_xsd_02\XmlXsdClassUsage\obj\Debug\XmlXsdClassUsage.exe
+E:\csharp\xml_csharp\xml_xsd\xml_xsd_02\XmlXsdClassUsage\obj\Debug\XmlXsdClassUsage.pdb

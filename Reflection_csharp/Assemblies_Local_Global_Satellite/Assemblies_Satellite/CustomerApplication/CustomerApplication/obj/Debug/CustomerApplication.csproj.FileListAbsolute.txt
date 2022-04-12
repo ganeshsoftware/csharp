@@ -1,0 +1,44 @@
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\bin\Debug\CustomerApplication.exe.config
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\bin\Debug\CustomerApplication.exe
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\bin\Debug\CustomerApplication.pdb
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.csprojAssemblyReference.cache
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.Form1.resources
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.Properties.Resources.resources
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.csproj.GenerateResource.cache
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.csproj.CoreCompileInputs.cache
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.exe
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.pdb
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\bin\Debug\en-US\CustomerApplication.resources.dll
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\bin\Debug\ka\CustomerApplication.resources.dll
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.string.en-US.resources
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.string.ka.resources
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\en-US\CustomerApplication.resources.dll
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\ka\CustomerApplication.resources.dll
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\bin\Debug\he\CustomerApplication.resources.dll
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.string.he.resources
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\he\CustomerApplication.resources.dll
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\bin\Debug\ta\CustomerApplication.resources.dll
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.string.ta.resources
+D:\STUDENTS\SDLC\VaniDevi M P\CustomerApplication\CustomerApplication\obj\Debug\ta\CustomerApplication.resources.dll
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\bin\Debug\CustomerApplication.exe.config
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\bin\Debug\CustomerApplication.exe
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\bin\Debug\CustomerApplication.pdb
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\bin\Debug\ka\CustomerApplication.resources.dll
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\bin\Debug\en-US\CustomerApplication.resources.dll
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\bin\Debug\ta\CustomerApplication.resources.dll
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.csproj.AssemblyReference.cache
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.Form1.resources
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.Properties.Resources.resources
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.string.ka.resources
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.string.en-US.resources
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.string.ta.resources
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.csproj.GenerateResource.cache
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.csproj.CoreCompileInputs.cache
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\ka\CustomerApplication.resources.dll
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\en-US\CustomerApplication.resources.dll
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\ta\CustomerApplication.resources.dll
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.exe
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.pdb
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\bin\Debug\hi\CustomerApplication.resources.dll
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\CustomerApplication.string.hi.resources
+E:\csharp\Reflection_csharp\Assemblies_Local_Global_Satellite\Assemblies_Satellite\CustomerApplication\CustomerApplication\obj\Debug\hi\CustomerApplication.resources.dll

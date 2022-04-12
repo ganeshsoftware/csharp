@@ -1,0 +1,19 @@
+C:\Users\normesta\Documents\Visual Studio 2013\Projects\XMLProcessingApp\XMLProcessingApp\bin\Debug\XMLProcessingApp.exe
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\bin\Debug\booksData.xml
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\bin\Debug\XMLProcessingApp.exe
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\bin\Debug\XMLProcessingApp.pdb
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.csprojResolveAssemblyReference.cache
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.Form1.resources
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.Properties.Resources.resources
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.csproj.GenerateResource.Cache
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.exe
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.pdb
+D:\Core_DOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.exe
+D:\Core_DOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.pdb
+D:\Core_DOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\BooksProject\XMLProcessingApp\bin\Debug\XMLProcessingApp.exe
+D:\Core_DOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\BooksProject\XMLProcessingApp\bin\Debug\XMLProcessingApp.pdb
+D:\Core_DOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.csprojResolveAssemblyReference.cache
+D:\Core_DOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.Form1.resources
+D:\Core_DOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.Properties.Resources.resources
+D:\Core_DOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.csproj.GenerateResource.Cache
+D:\Core_DOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\BooksProject\XMLProcessingApp\bin\Debug\booksData8.xml

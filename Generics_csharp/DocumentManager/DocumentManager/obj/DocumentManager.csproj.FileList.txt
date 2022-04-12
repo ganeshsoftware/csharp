@@ -1,0 +1,8 @@
+.\bin\Debug\DocumentManager.exe.config
+.\bin\Debug\DocumentManager.exe
+.\bin\Debug\DocumentManager.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Wrox.ProCSharp.Generics.Properties.Resources.resources
+obj\Debug\DocumentManager.csproj.GenerateResource.Cache
+obj\Debug\DocumentManager.exe
+obj\Debug\DocumentManager.pdb

@@ -1,0 +1,58 @@
+https://stackoverflow.com/questions/1047662/what-is-asynccallback
+
+Attributes:
+-----------
+1) Provide extra information to some items in the program (program elements like class, methods, properties etc) that could be used by the compiler during runtime.
+
+2) Custom attributes: Define and use your attributes.This can be useful for documentation purposes, where they can be used in conjuction with the reflection technology in order to perform programming tasks based on attributes.
+
+
+Assemblies:
+-----------
+1) Logical unit that contains compiled code targeting the .NET framework.
+
+2) Self describing: A logical unit can be stored in more than one file (multifile assembly) with one main entry point.
+
+3) Assemblies are Executable Assembly / Library Assembly.
+
+4) Metadata: Describes the types and methods defined in the corresponding code.
+
+5) Manifest: Assembly metadata itself allows checks to be made on the version of the assembly and its integrity.
+
+
+
+
+Type safety:
+------------
+Although enforcing type-safety might initially appear to hurt performance, in many cases the benefits gained  from the services provided by the .NET that rely on the type safety far outweigh this performance loss.
+
+
+
+Points:
+-------
+
+1) All code written in C# will run in the .NET framework.
+
+2) The architecture and methodologies of C# reflect the underlying methodologies of the .NET Framework.
+
+3) CLR  and the .NET Runtime are one and the same.
+
+4) Managed code and the IL code are one and the same and this is nothing but the code running under the control of the CLR.
+
+5) C# language cannot be viewed in isolation but instead should be considered in parallel with the .NET Framework. The C# compiler specifically targets .NET framework which means that all code written in C# will always run in the .NET framework. This has two important consequences:
+    
+    a) The architecture and methodologies of the C# compiler reflect the underlying methodologies of the .NET        framework.
+    b) Specific assembly features of the C# actually depend on the features of the .NET base class.  
+
+
+
+
+6) 
+
+
+  
+
+
+
+
+

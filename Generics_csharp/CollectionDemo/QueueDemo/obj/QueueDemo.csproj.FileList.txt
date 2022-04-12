@@ -1,0 +1,7 @@
+.\bin\Debug\QueueDemo.exe
+.\bin\Debug\QueueDemo.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\QueueDemo.Properties.Resources.resources
+obj\Debug\QueueDemo.csproj.GenerateResource.Cache
+obj\Debug\QueueDemo.exe
+obj\Debug\QueueDemo.pdb

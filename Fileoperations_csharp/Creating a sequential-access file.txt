@@ -1,0 +1,30 @@
+//Sri Ganesh
+
+   using System;
+   using System.Data;
+   using System.IO;
+   using System.Runtime.Serialization.Formatters.Binary;
+   using System.Runtime.Serialization;
+
+   public class CreateFile {
+      static void Main() {
+         BinaryFormatter formatter = new BinaryFormatter();
+         FileStream output = new FileStream( "test.dat",FileMode.OpenOrCreate, FileAccess.Write );
+         Record record = new Record();
+         record.Account = 1234;
+         record.FirstName = "FirstName";
+         record.LastName = "LastName";
+         record.Balance = 1234.345;
+
+         formatter.Serialize( output, record );
+         output.Close();
+      }
+   }
+   
+   [Serializable]
+   public class Record{
+      public int Account;
+      public String FirstName;
+      public String LastName;
+      public double Balance;
+   }

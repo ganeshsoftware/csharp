@@ -1,0 +1,31 @@
+//Sri Ganesh.
+
+using System;
+using System.IO;
+using System.Text;
+
+class Class1{
+  static void Main(string[] args)  {
+         byte[] byData = new byte[100];
+         char[] charData = new Char[100];
+
+         try {
+            FileStream aFile = new FileStream("practice.txt",FileMode.Open);
+            aFile.Seek(55,SeekOrigin.Begin);
+            aFile.Read(byData,0,100);
+         }
+         catch(IOException e)
+         {
+            Console.WriteLine("An IO exception has been thrown!");
+            Console.WriteLine(e.ToString());
+            Console.ReadLine();
+            return;
+         }
+
+         Decoder d = Encoding.UTF8.GetDecoder();
+         d.GetChars(byData, 0, byData.Length, charData, 0);
+
+         Console.WriteLine(charData);
+         return;
+  }
+}

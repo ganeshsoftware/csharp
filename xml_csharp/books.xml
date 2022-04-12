@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books xmlns="http://www.contoso.com/books">
+  
+  <book genre="electronics" ISBN="1-861001-57-8" publicationdate="1823-01-28">
+    <title>Digital Electronics</title>
+    <price>24.95</price>
+  </book>
+  
+  <book genre="electronics" ISBN="1-861002-30-1" publicationdate="1985-01-01">
+    <title>Microprocessors</title>
+    <price>29.95</price>
+  </book>
+  
+  <book genre="programming" ISBN="1-861001-45-3" publicationdate="1811-01-01">
+    <title>Programming in C</title>
+    <price>19.95</price>
+  </book>
+  
+</books>

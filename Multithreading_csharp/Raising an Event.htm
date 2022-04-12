@@ -1,0 +1,868 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0063)http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx -->
+<!DOCTYPE html PUBLIC "" ""><HTML dir="ltr" xmlns="http://www.w3.org/1999/xhtml"><HEAD><META 
+content="IE=10.000" http-equiv="X-UA-Compatible">
+<LINK href="http://msdn.microsoft.com/en-us/library/vstudio/wkzf914z(v=vs.100).aspx" 
+rel="canonical">         
+<META http-equiv="Content-Type" 
+content="text/html; charset=utf-8"><TITLE>Raising an Event</TITLE> 
+<META name="DCS.dcsuri" content="/en-us/library/wkzf914z(d=default,l=en-us,v=vs.100).aspx"> 
+<META name="NormalizedUrl" content="http://msdn.microsoft.com/en-us/library/wkzf914z(d=default,l=en-us,v=vs.100).aspx"> 
+<META name="DCSext.ProductFamily" content="LIB_DG"> 
+<META name="DCSext.Product" content="NDP_CLR"> 
+<META name="DCSext.Title" content="Raising an Event"> 
+<META name="VotingContextUrl" content="http://msdn.microsoft.com/en-us/library/wkzf914z(d=default,l=en-us,v=vs.100).aspx"> 
+<META name="MN" content="EE4293CC-9:50:11 PM"> 
+<META name="Search.ShortId" content="wkzf914z"> 
+<META name="Ms.Locale" content="en-us">             <LINK href="Raising%20an%20Event_files/Combined.css" 
+rel="stylesheet" type="text/css">
+<META name="GENERATOR" content="MSHTML 10.00.9200.16660"></HEAD>     
+<BODY class="library">
+<DIV id="page">
+<DIV id="ux-header"><HEADER>
+<DIV class="row">
+<DIV class="left">
+<DIV id="Fragment_SiteLogo" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="SiteLogo"><A id="27762_1" href="http://msdn.microsoft.com/en-us" 
+xmlns="http://www.w3.org/1999/xhtml">Developer Network</A> </DIV></DIV>
+<DIV id="grip"></DIV>
+<DIV class="right desktop">
+<DIV class="auxNav">
+<DIV id="Fragment_Subscriptions" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="Subscriptions"><A id="27762_5" href="http://msdn.microsoft.com/dn369243" 
+xmlns="http://www.w3.org/1999/xhtml">MSDN subscriptions</A> </DIV>
+<DIV id="Fragment_GetTools" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="GetTools"><A id="27762_3" href="http://msdn.microsoft.com/dn369242" 
+xmlns="http://www.w3.org/1999/xhtml">Get tools</A> </DIV>
+<DIV class="signIn"><A title="Sign in" class="scarabLink" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=11&amp;ct=1377233411&amp;rver=6.0.5276.0&amp;wp=MCLBI&amp;wlcxt=MSDN%24MSDN%24MSDN&amp;wreply=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fwkzf914z%2528v%3dvs.100%2529.aspx&amp;lc=1033&amp;id=254354&amp;mkt=en-US">Sign 
+in</A></DIV></DIV>
+<DIV class="SearchBox">
+<FORM name="HeaderSearchForm" id="HeaderSearchForm" onsubmit="return Epx.Controls.SearchBox.searchBoxOnSubmit(this, this.title);" 
+action="http://social.msdn.microsoft.com/Search" method="get"><INPUT name="query" 
+id="HeaderSearchTextBox" onfocus="Epx.Controls.SearchBox.watermarkFocus(this, this.title, 'SearchBoxOnFocus')" 
+onblur="Epx.Controls.SearchBox.watermarkBlur(this, this.title, 'SearchBoxOnFocus')" 
+type="text" maxlength="200">             <INPUT name="refinement" id="RefinementId" 
+type="hidden">             <BUTTON class="header-search-button" id="HeaderSearchButton" 
+type="submit" value=""></BUTTON>         </FORM></DIV></DIV></DIV>
+<DIV class="row" id="droor">
+<DIV class="left"><NAV>
+<UL>
+  <LI class="inactive"><A title="Opportunity" href="http://msdn.microsoft.com/dn271881">Opportunity</A> 
+                                   
+  <DIV class="area">
+  <DIV class="arrow"></DIV></DIV>
+  <DIV class="subNav">
+  <UL>
+    <LI><A title="iOS" href="http://msdn.microsoft.com/dn338451">iOS</A></LI>
+    <LI><A title="Android" 
+    href="http://msdn.microsoft.com/dn338440">Android</A></LI>
+    <LI><A title="Web" href="http://msdn.microsoft.com/dn338449">Web</A></LI>
+    <LI><A title=".Net" href="http://msdn.microsoft.com/dn338450">.Net</A></LI>
+    <LI><A title="Design" 
+    href="http://msdn.microsoft.com/dn338447">Design</A></LI>
+    <LI><A title="Games" 
+  href="http://msdn.microsoft.com/dn338446">Games</A></LI></UL></DIV></LI>
+  <LI class="inactive"><A title="Platform" href="http://msdn.microsoft.com/dn271880">Platform</A> 
+                                   
+  <DIV class="area">
+  <DIV class="arrow"></DIV></DIV>
+  <DIV class="subNav">
+  <UL>
+    <LI><A title="Tablet &amp; PC" 
+    href="http://msdn.microsoft.com/dn308583">Tablet &amp; PC</A></LI>
+    <LI><A title="Phone" 
+href="http://msdn.microsoft.com/dn338268">Phone</A></LI>
+    <LI><A title="Cloud" 
+  href="http://msdn.microsoft.com/dn338159">Cloud</A></LI></UL></DIV></LI>
+  <LI class="inactive"><A title="Connect" href="http://msdn.microsoft.com/dn338064">Connect</A> 
+                                   
+  <DIV class="area">
+  <DIV class="arrow"></DIV></DIV>
+  <DIV class="subNav">
+  <UL>
+    <LI><A title="Perspectives" 
+    href="http://msdn.microsoft.com/dn338452">Perspectives</A></LI>
+    <LI><A title="Events" 
+    href="http://events.msdn.microsoft.com/">Events</A></LI>
+    <LI><A title="Forums" 
+    href="http://social.msdn.microsoft.com/forums/">Forums</A></LI></UL></DIV></LI>
+  <LI class="inactive"><A title="Downloads" href="http://msdn.microsoft.com/dn292944">Downloads</A> 
+                                   
+  <DIV class="area">
+  <DIV class="arrow"></DIV></DIV>
+  <DIV class="subNav">
+  <UL>
+    <LI><A title="Developer tools" 
+    href="http://msdn.microsoft.com/dn369242">Developer tools</A></LI>
+    <LI><A title="SDKs" href="http://msdn.microsoft.com/dn369240">SDKs</A></LI>
+    <LI><A title="MSDN subscriptions" 
+    href="http://msdn.microsoft.com/dn369243">MSDN 
+  subscriptions</A></LI></UL></DIV></LI>
+  <LI class="active current"><A title="Develop" href="http://msdn.microsoft.com/dn338067">Develop</A> 
+                                   
+  <DIV class="area">
+  <DIV class="arrow"></DIV></DIV>
+  <DIV class="subNav">
+  <UL>
+    <LI class="current"><A title="Library" href="http://msdn.microsoft.com/library">Library</A></LI>
+    <LI><A title="Code samples" href="http://code.msdn.microsoft.com/">Code 
+    samples</A></LI></UL></DIV></LI></UL></NAV></DIV>
+<DIV class="right mobile"></DIV>
+<DIV class="right">
+<DIV id="Fragment_SocialLinks" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="SocialLinks">
+<DIV class="LinkList">
+<DIV class="LinkListTitle">Join us</DIV>
+<DIV class="Links">
+<UL class="LinkColumn horizontal">
+  <LI><A class="facebook" id="SocialLinks_430_7" href="http://www.facebook.com/microsoftdeveloper" 
+  target="_blank" 
+  xmlns="http://www.w3.org/1999/xhtml">http://www.facebook.com/microsoftdeveloper</A> 
+          </LI>
+  <LI><A class="twitter" id="SocialLinks_430_8" href="https://twitter.com/msdev" 
+  target="_blank" 
+  xmlns="http://www.w3.org/1999/xhtml">https://twitter.com/msdev</A>         
+  </LI>
+  <LI><A class="googlePlus" id="SocialLinks_430_9" href="http://plus.google.com/111221966647232053570/" 
+  target="_blank" 
+  xmlns="http://www.w3.org/1999/xhtml">http://plus.google.com/111221966647232053570/</A> 
+          </LI></UL></DIV></DIV></DIV></DIV><SPAN id="singleCol"></SPAN>			 <SPAN 
+id="doubleCol"></SPAN>         </DIV></HEADER> </DIV>
+<DIV id="body">
+<DIV id="leftNav">
+<DIV id="tocnav">
+<DIV class="toclevel0" data-toclevel="0"><A title="MSDN Library" id="ms310241_MSDN.10_en-us" 
+href="http://msdn.microsoft.com/en-us/library/ms123401.aspx" mtpsshortid="ms123401_MSDN.10_en-us" 
+mtpsassetid="5DDC0A78-6B2C-43E3-9C56-55F45C0DFFA5_MSDN.10_en-us" mtpsaliasid="" 
+data-tochassubtree="true">MSDN Library</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title=".NET Development" id="aa139615_MSDN.10_en-us" 
+href="http://msdn.microsoft.com/en-us/library/ff361664.aspx" mtpsshortid="ff361664_VS.110_en-us" 
+mtpsassetid="43e22490-fb00-409c-8301-585a03034ae2_MSDN.10_en-us" mtpsaliasid="" 
+data-tochassubtree="true">.NET Development</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title=".NET Framework 4" id="dd429910_VS.100_en-us" 
+href="http://msdn.microsoft.com/en-us/library/w0x726c2(v=vs.100).aspx" 
+mtpsshortid="w0x726c2_VS.100_en-us" mtpsassetid="f61f02f2-2f20-483d-8f56-a9c8f3a54986_VS.100_en-us" 
+mtpsaliasid="" data-tochassubtree="true">.NET Framework 4</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title=".NET Framework Core Development" 
+id="dd429984_VS.100_en-us" href="http://msdn.microsoft.com/en-us/library/190bkk9s(v=vs.100).aspx" 
+mtpsshortid="190bkk9s_VS.100_en-us" mtpsassetid="df8a7e59-1f03-4b4f-982f-e6bf40b10113_VS.100_en-us" 
+mtpsaliasid="" data-tochassubtree="true">.NET Framework Core 
+Development</A></DIV>
+<DIV class="toclevel0" data-toclevel="0"><A title="Development Fundamentals" id="ms298421_VS.100_en-us" 
+href="http://msdn.microsoft.com/en-us/library/ms172157(v=vs.100).aspx" 
+mtpsshortid="ms172157_VS.100_en-us" mtpsassetid="653da4ba-3752-4d1f-a08a-de017dc86ecc_VS.100_en-us" 
+mtpsaliasid="" data-tochassubtree="true">Development Fundamentals</A></DIV>
+<DIV class="toclevel1" data-toclevel="1"><A title="Handling and Raising Events" 
+id="ms298446_VS.100_en-us" href="http://msdn.microsoft.com/en-us/library/edzehd2t(v=vs.100).aspx" 
+mtpsshortid="edzehd2t_VS.100_en-us" mtpsassetid="b6f65241-e0ad-4590-a99f-200ce741bb1f_VS.100_en-us" 
+mtpsaliasid="" data-tochassubtree="true">Handling and Raising Events</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Events and Delegates" href="http://msdn.microsoft.com/en-us/library/17sde2xt(v=vs.100).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">Events and Delegates</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="How to: Connect Event Handler Methods to Events" 
+href="http://msdn.microsoft.com/en-us/library/xwbwks95(v=vs.100).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">How to: Connect Event Handler 
+Methods to Events</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Consuming Events" href="http://msdn.microsoft.com/en-us/library/2ccyd347(v=vs.100).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">Consuming Events</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="How to: Consume Events in a Web Forms Application" 
+href="http://msdn.microsoft.com/en-us/library/58tf9b9h(v=vs.100).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">How to: Consume Events in a Web 
+Forms Application</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="How to: Consume Events in a Windows Forms Application" 
+href="http://msdn.microsoft.com/en-us/library/0y0987sc(v=vs.100).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">How to: Consume Events in a Windows 
+Forms Application</A></DIV>
+<DIV class="toclevel2 current" data-toclevel="2"><A title="Raising an Event" 
+href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">Raising an Event</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="How to: Implement Events in Your Class" 
+href="http://msdn.microsoft.com/en-us/library/5z57dxz2(v=vs.100).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">How to: Implement Events in Your 
+Class</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="How to: Raise and Consume Events" 
+href="http://msdn.microsoft.com/en-us/library/9aackb16(v=vs.100).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">How to: Raise and Consume 
+Events</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="Raising Multiple Events" 
+href="http://msdn.microsoft.com/en-us/library/0sx1bz6x(v=vs.100).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">Raising Multiple Events</A></DIV>
+<DIV class="toclevel2" data-toclevel="2"><A title="How to: Handle Multiple Events Using Event Properties" 
+href="http://msdn.microsoft.com/en-us/library/8843a9ch(v=vs.100).aspx" 
+mtpsshortid="" mtpsassetid="" mtpsaliasid="">How to: Handle Multiple Events 
+Using Event Properties</A></DIV></DIV><A id="NavigationResize" href="javascript:void(0)"><IMG 
+title="Expand" class="cl_nav_resize_open" alt="Expand" src="Raising%20an%20Event_files/ImageSprite.png"> 
+    <IMG title="Minimize" class="cl_nav_resize_close" alt="Minimize" src="Raising%20an%20Event_files/ImageSprite.png"> 
+</A>     </DIV>
+<DIV class="content" id="content">
+<DIV class="cl_lw_vs_seperator" id="ratingCounterSeperator" style="display: none;"></DIV>
+<DIV id="ratingCounter"><SPAN class="ratingText" id="rcA">            3 out of 
+10 rated this helpful <SPAN id="rateThisPrefix">- </SPAN><A title="Rate this topic" 
+id="rateThisTopic" href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx#feedback">Rate 
+this topic</A>                     </SPAN>     </DIV>
+<DIV class="topic" xmlns="http://www.w3.org/1999/xhtml">
+<H1 class="title">Raising an Event</H1>
+<DIV class="lw_vs">
+<DIV id="curversion"><STRONG>            .NET Framework 4         </STRONG>     
+</DIV>
+<DIV id="versionclick">
+<DIV class="cl_lw_vs_seperator" id="vsseperator"></DIV>
+<DIV>
+<DIV><A id="vsLink" href="javascript:;">                        Other Versions   
+                  </A>         </DIV>
+<DIV class="cl_vs_arrow clip10x10"><IMG class="cl_lw_vs_arrow" id="vsArrow" alt="" 
+src="Raising%20an%20Event_files/ImageSprite.png">         </DIV></DIV>
+<UL id="vsPanel">
+  <LI><A title="" href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.110).aspx">.NET 
+  Framework 4.5</A>         </LI>
+  <LI><A title="" href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.85).aspx">.NET 
+  Framework 3.0</A>         </LI>
+  <LI><A title="" href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.71).aspx">.NET 
+  Framework 1.1</A>         </LI>
+  <LI><A title="" href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.90).aspx">.NET 
+  Framework 3.5</A>         </LI>
+  <LI><A title="" href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.80).aspx">.NET 
+  Framework 2.0</A>         </LI></UL></DIV></DIV>
+<DIV style="clear: both;"></DIV>
+<DIV id="mainSection">
+<DIV id="mainBody">
+<P></P>
+<DIV class="introduction">
+<P>If you want your class to raise an event, you must provide the following 
+three elements: </P>
+<UL>
+  <LI>
+  <P>A class that provides event data.</P></LI>
+  <LI>
+  <P>An event delegate.</P></LI>
+  <LI>
+  <P>The class that raises the event.</P></LI></UL></DIV>
+<DIV>
+<DIV class="LW_CollapsibleArea_TitleDiv">
+<DIV><A title="Collapse" class="LW_CollapsibleArea_TitleAhref" href="javascript:void(0)"><SPAN 
+class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></SPAN><SPAN class="LW_CollapsibleArea_Title">Defining 
+a Class to Provide Event Data</SPAN></A>
+<DIV class="LW_CollapsibleArea_HrDiv">
+<HR class="LW_CollapsibleArea_Hr">
+</DIV></DIV></DIV>
+<DIV class="sectionblock"><A id="sectionToggle0"></A>
+<P>By convention in the .NET Framework, when an event is raised, it passes event 
+data to its event handlers. The event data is provided by the <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.100).aspx">System<SPAN 
+xmlns="">.</SPAN>EventArgs</A></SPAN>&nbsp;class or by a class that is derived 
+from it.</P>
+<P>Often, an event has no custom data; the fact that the event was fired 
+provides all of the information that event handlers require. In this case, the 
+event can pass an <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.100).aspx">EventArgs</A></SPAN> 
+object to its handlers. The <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.100).aspx">EventArgs</A></SPAN> 
+class has only a single member, <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.eventargs.empty(v=vs.100).aspx">Empty</A></SPAN>, 
+that is not inherited from <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.object(v=vs.100).aspx">System<SPAN 
+xmlns="">.</SPAN>Object</A></SPAN>. It can be used to instantiate a new <SPAN><A 
+href="http://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.100).aspx">EventArgs</A></SPAN> 
+class.</P>
+<P>If an event does have custom data, it can pass an instance of a class derived 
+from <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.100).aspx">EventArgs</A></SPAN> 
+to event handlers. Depending on the precise data the event passes to handlers, 
+you may be able to use an existing event data class in the .NET Framework. For 
+example, if your event handler allows the action associated with the event to be 
+cancelled, you can use the <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs(v=vs.100).aspx">CancelEventArgs</A></SPAN> 
+class. </P>
+<P>When you need to provide custom data to handlers and a existing class is not 
+available, you can define your own event data class. It must derive from 
+<SPAN><A href="http://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.100).aspx">System<SPAN 
+xmlns="">.</SPAN>EventArgs</A></SPAN>. By convention, this class is named <SPAN 
+class="parameter">EventName</SPAN><SPAN><SPAN 
+class="input">EventArgs</SPAN></SPAN>. The following example illustrates such a 
+custom event data class. It defines a class named <SPAN 
+class="code">AlarmEventArgs</SPAN> that provides two items of data to event 
+handlers: the read-only <SPAN class="code">Time</SPAN> property, which indicates 
+when the alarm went off; and the <SPAN class="code">Snooze</SPAN> property, 
+which indicates whether the alarm should go off again after a designated 
+interval or whether future alarms should be cancelled.</P>
+<DIV id="snippetGroup">
+<DIV class="codeSnippetContainer" id="code-snippet-1" xmlns="">
+<DIV class="codeSnippetContainerTabs">
+<DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=cpp#code-snippet-1">C++</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-1">VB</A></DIV></DIV>
+<DIV class="codeSnippetContainerCodeContainer">
+<DIV class="codeSnippetToolBar">
+<DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Copy to clipboard." 
+style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_9c087405-265f-4201-8f9a-18776e0103af');">Copy</A> 
+            </DIV></DIV>
+<DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_9c087405-265f-4201-8f9a-18776e0103af" 
+dir="ltr">
+<DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">public</SPAN> <SPAN style="color: blue;">class</SPAN> AlarmEventArgs : EventArgs
+{
+   <SPAN style="color: blue;">private</SPAN> DateTime alarmTime;
+   <SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">bool</SPAN> snoozeOn = <SPAN style="color: blue;">true</SPAN>;
+
+   <SPAN style="color: blue;">public</SPAN> AlarmEventArgs(DateTime time)
+   {
+      <SPAN style="color: blue;">this</SPAN>.alarmTime = time;
+   }
+
+   <SPAN style="color: blue;">public</SPAN> DateTime Time
+   {
+      <SPAN style="color: blue;">get</SPAN> { <SPAN style="color: blue;">return</SPAN> <SPAN style="color: blue;">this</SPAN>.alarmTime; }
+   }
+
+   <SPAN style="color: blue;">public</SPAN> <SPAN style="color: blue;">bool</SPAN> Snooze
+   {
+      <SPAN style="color: blue;">get</SPAN> { <SPAN style="color: blue;">return</SPAN> <SPAN style="color: blue;">this</SPAN>.snoozeOn; }
+      <SPAN style="color: blue;">set</SPAN> { <SPAN style="color: blue;">this</SPAN>.snoozeOn = value; }
+   }   
+}
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV>
+<DIV class="LW_CollapsibleArea_TitleDiv">
+<DIV><A title="Collapse" class="LW_CollapsibleArea_TitleAhref" href="javascript:void(0)"><SPAN 
+class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></SPAN><SPAN class="LW_CollapsibleArea_Title">Defining 
+a Delegate for the Event</SPAN></A>
+<DIV class="LW_CollapsibleArea_HrDiv">
+<HR class="LW_CollapsibleArea_Hr">
+</DIV></DIV></DIV>
+<DIV class="sectionblock"><A id="sectionToggle1"></A>
+<P>An event delegate is used to define the signature of the event. A particular 
+event delegate typically corresponds to a particular event data class. By 
+convention, events in the .NET Framework have the signature <SPAN class="parameter">EventName</SPAN>(<SPAN 
+class="parameter">sender</SPAN>, <SPAN class="parameter">e</SPAN>), where <SPAN 
+class="parameter">sender</SPAN> is an <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.object(v=vs.100).aspx">Object</A></SPAN> 
+that provides a reference to the class or structure that fired the event, and 
+<SPAN class="parameter">e</SPAN> is an <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.100).aspx">EventArgs</A></SPAN>&nbsp;object 
+or an object derived from <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.100).aspx">EventArgs</A></SPAN>&nbsp;that 
+provides event data. The delegate definition then typically takes the form <SPAN 
+class="parameter">EventName</SPAN><SPAN><SPAN 
+class="input">Handler</SPAN></SPAN>(<SPAN class="parameter">sender</SPAN>, <SPAN 
+class="parameter">e</SPAN>).</P>
+<P>If you are using an event data class that is already defined in the .NET 
+Framework class library or in a third-party library, it is likely that a 
+corresponding event delegate is also defined in that library. For example, the 
+<SPAN><A href="http://msdn.microsoft.com/en-us/library/system.eventhandler(v=vs.100).aspx">EventHandler</A></SPAN> 
+delegate can be used along with the <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.100).aspx">EventArgs</A></SPAN> 
+class. Similarly, the <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventhandler(v=vs.100).aspx">CancelEventHandler</A></SPAN> 
+delegate can be used along with the <SPAN><A href="http://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs(v=vs.100).aspx">CancelEventArgs</A></SPAN> 
+class.</P>
+<P>If you define a custom event data class, you can also define a custom 
+delegate to define the event signature, or you can use the generic <SPAN><A 
+href="http://msdn.microsoft.com/en-us/library/bb549311(v=vs.100).aspx">Action<SPAN 
+xmlns="">&lt;</SPAN>T1, T2<SPAN xmlns="">&gt;</SPAN></A></SPAN> delegate.</P>
+<P>The following example defines an event delegate named <SPAN 
+class="code">AlarmEventHandler</SPAN>.</P>
+<DIV id="snippetGroup1">
+<DIV class="codeSnippetContainer" id="code-snippet-2" xmlns="">
+<DIV class="codeSnippetContainerTabs">
+<DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=cpp#code-snippet-2">C++</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-2">VB</A></DIV></DIV>
+<DIV class="codeSnippetContainerCodeContainer">
+<DIV class="codeSnippetToolBar">
+<DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Copy to clipboard." 
+style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_3aa71796-f701-478b-b347-9ca5dde3b51f');">Copy</A> 
+            </DIV></DIV>
+<DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_3aa71796-f701-478b-b347-9ca5dde3b51f" 
+dir="ltr">
+<DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">public</SPAN> <SPAN style="color: blue;">delegate</SPAN> <SPAN style="color: blue;">void</SPAN> AlarmEventHandler(<SPAN style="color: blue;">object</SPAN> sender, AlarmEventArgs e);
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV>
+<DIV class="LW_CollapsibleArea_TitleDiv">
+<DIV><A title="Collapse" class="LW_CollapsibleArea_TitleAhref" href="javascript:void(0)"><SPAN 
+class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></SPAN><SPAN class="LW_CollapsibleArea_Title">Defining 
+a Class to Raise the Event</SPAN></A>
+<DIV class="LW_CollapsibleArea_HrDiv">
+<HR class="LW_CollapsibleArea_Hr">
+</DIV></DIV></DIV>
+<DIV class="sectionblock"><A id="sectionToggle2"></A>
+<P>The class that raises the event must provide the event declaration and define 
+a method that raises the event. In addition, it must provide some logic to raise 
+the event in a class property or method.</P>
+<P>You define an event member in your class using the <SPAN><SPAN 
+class="input">event</SPAN></SPAN> keyword in C# or the <SPAN><SPAN 
+class="input">Event</SPAN></SPAN> statement in Visual Basic. When the compiler 
+encounters an event declaration in your class, it creates a private member such 
+as:</P>
+<DIV class="codeSnippetContainer" id="code-snippet-3" xmlns="">
+<DIV class="codeSnippetContainerTabs"></DIV>
+<DIV class="codeSnippetContainerCodeContainer">
+<DIV class="codeSnippetToolBar">
+<DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Copy to clipboard." 
+style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_5034eca1-19da-4222-a033-27fda4e0c4d9');">Copy</A> 
+            </DIV></DIV>
+<DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_5034eca1-19da-4222-a033-27fda4e0c4d9" 
+dir="ltr">
+<DIV style="color: black;">
+<PRE>private EventNameHandler eh = null;
+</PRE></DIV></DIV></DIV></DIV>
+<P>The compiler also creates the two public methods, <SPAN 
+class="code">add_EventName</SPAN> and <SPAN 
+class="code">remove_EventName</SPAN>. These methods are event hooks that allow 
+delegates to be combined or removed from the event delegate <SPAN 
+class="code">eh</SPAN>. The details are hidden from the programmer.</P>
+<DIV class="alert">
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH><IMG title="Note" class="cl_IC101471" id="alert_note" alt="Note" src="Raising%20an%20Event_files/clear.gif" 
+      xmlns=""><STRONG>Note</STRONG></TH></TR>
+  <TR>
+    <TD>
+      <P>In languages other than C# and Visual Basic 2005, the compiler might 
+      not automatically generate the code corresponding to an event member, and 
+      you might have to explicitly define the event hooks and the private 
+      delegate field.</P></TD></TR></TBODY></TABLE></DIV>
+<P>The following example declares an event named <SPAN 
+class="code">AlarmEvent</SPAN>. It is excerpted from the example for a class 
+named <SPAN class="code">Alarm</SPAN> whose complete source code is shown below. 
+Note that it has the signature of the <SPAN 
+class="code">AlarmEventHandler</SPAN> delegate.</P>
+<DIV id="snippetGroup2">
+<DIV class="codeSnippetContainer" id="code-snippet-4" xmlns="">
+<DIV class="codeSnippetContainerTabs">
+<DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=cpp#code-snippet-4">C++</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-4">VB</A></DIV></DIV>
+<DIV class="codeSnippetContainerCodeContainer">
+<DIV class="codeSnippetToolBar">
+<DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Copy to clipboard." 
+style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_6b1b3bdd-947d-4a28-ad20-03e1fadd20b3');">Copy</A> 
+            </DIV></DIV>
+<DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_6b1b3bdd-947d-4a28-ad20-03e1fadd20b3" 
+dir="ltr">
+<DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">public</SPAN> <SPAN style="color: blue;">event</SPAN> AlarmEventHandler AlarmEvent;
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+<P>Once you have defined your event implementation, you must determine when to 
+raise the event. You raise the event by calling the protected <SPAN><SPAN class="input">On</SPAN></SPAN><SPAN 
+class="parameter">EventName</SPAN> method in the class that defined the event, 
+or in a derived class. The <SPAN><SPAN class="input">On</SPAN></SPAN><SPAN 
+class="parameter">EventName</SPAN>method then raises the event.</P>
+<DIV class="alert">
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH><IMG title="Note" class="cl_IC101471" id="alert_note" alt="Note" src="Raising%20an%20Event_files/clear.gif" 
+      xmlns=""><STRONG>Note</STRONG></TH></TR>
+  <TR>
+    <TD>
+      <P>The protected <SPAN><SPAN class="input">On</SPAN></SPAN><SPAN class="parameter">EventName</SPAN>method 
+      also allows derived classes to override the event without attaching a 
+      delegate to it. A derived class must always call the <SPAN><SPAN class="input">On</SPAN></SPAN><SPAN 
+      class="parameter">EventName</SPAN>method of the base class to ensure that 
+      registered delegates receive the event.</P></TD></TR></TBODY></TABLE></DIV>
+<P>The following example defines the <SPAN class="code">OnAlarmEvent</SPAN> 
+method, which is responsible for raising the <SPAN 
+class="code">AlarmEvent</SPAN> event.</P>
+<DIV id="snippetGroup3">
+<DIV class="codeSnippetContainer" id="code-snippet-5" xmlns="">
+<DIV class="codeSnippetContainerTabs">
+<DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=cpp#code-snippet-5">C++</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-5">VB</A></DIV></DIV>
+<DIV class="codeSnippetContainerCodeContainer">
+<DIV class="codeSnippetToolBar">
+<DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Copy to clipboard." 
+style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_ffdb0606-45ac-447e-ae08-1e8db28aff1f');">Copy</A> 
+            </DIV></DIV>
+<DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_ffdb0606-45ac-447e-ae08-1e8db28aff1f" 
+dir="ltr">
+<DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">protected</SPAN> <SPAN style="color: blue;">void</SPAN> OnAlarmEvent(AlarmEventArgs e)
+{
+   AlarmEvent(<SPAN style="color: blue;">this</SPAN>, e);
+}  
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+<P>The following example defines a method named <SPAN class="code">Set</SPAN> 
+that contains the logic to fire the event by calling the <SPAN 
+class="code">OnAlarmEvent</SPAN> method. If the hours and the minutes of the 
+alarm time equal the hours and minutes of the current time, the <SPAN class="code">Set</SPAN> 
+method instantiates an <SPAN class="code">AlarmEventArgs</SPAN> object and 
+provides it with the time that the alarm went off. After the event handlers 
+execute, it checks the value of the <SPAN class="code">Snooze</SPAN> property. 
+If <SPAN class="code">Snooze</SPAN> is <SPAN><SPAN 
+class="input">false</SPAN></SPAN>, no more alarm events are to be raised, so the 
+<SPAN class="code">Set</SPAN> method can end. If <SPAN 
+class="code">Snooze</SPAN> is <SPAN><SPAN class="input">true</SPAN></SPAN>, the 
+time the alarm is to go off is incremented by the value of the <SPAN class="code">Interval</SPAN> 
+property.</P>
+<DIV id="snippetGroup4">
+<DIV class="codeSnippetContainer" id="code-snippet-6" xmlns="">
+<DIV class="codeSnippetContainerTabs">
+<DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=cpp#code-snippet-6">C++</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-6">VB</A></DIV></DIV>
+<DIV class="codeSnippetContainerCodeContainer">
+<DIV class="codeSnippetToolBar">
+<DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Copy to clipboard." 
+style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_31d20b14-5639-4af2-b420-12c4ceece554');">Copy</A> 
+            </DIV></DIV>
+<DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_31d20b14-5639-4af2-b420-12c4ceece554" 
+dir="ltr">
+<DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">public</SPAN> <SPAN style="color: blue;">void</SPAN> Set()
+{
+   <SPAN style="color: blue;">while</SPAN> (<SPAN style="color: blue;">true</SPAN>) {
+      System.Threading.Thread.Sleep(2000);
+      DateTime currentTime = DateTime.Now;
+      <SPAN style="color: green;">// Test whether it is time for the alarm to go off.</SPAN>
+      <SPAN style="color: blue;">if</SPAN> (currentTime.Hour == alarmTime.Hour &amp;&amp; 
+          currentTime.Minute == alarmTime.Minute)
+      {    
+         AlarmEventArgs args = <SPAN style="color: blue;">new</SPAN> AlarmEventArgs(currentTime);
+         OnAlarmEvent(args);
+         <SPAN style="color: blue;">if</SPAN> (! args.Snooze) 
+            <SPAN style="color: blue;">return</SPAN>;
+         <SPAN style="color: blue;">else</SPAN>
+            <SPAN style="color: blue;">this</SPAN>.alarmTime = <SPAN style="color: blue;">this</SPAN>.alarmTime.AddMinutes(<SPAN style="color: blue;">this</SPAN>.interval);
+      }
+   }
+} 
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV>
+<P>The following example includes all of the source code for the Alarm 
+class.</P>
+<DIV id="snippetGroup5">
+<DIV class="codeSnippetContainer" id="code-snippet-7" xmlns="">
+<DIV class="codeSnippetContainerTabs">
+<DIV class="codeSnippetContainerTabActive" dir="ltr"><A>C#</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=cpp#code-snippet-7">C++</A></DIV>
+<DIV class="codeSnippetContainerTab" dir="ltr"><A href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx?cs-save-lang=1&amp;cs-lang=vb#code-snippet-7">VB</A></DIV></DIV>
+<DIV class="codeSnippetContainerCodeContainer">
+<DIV class="codeSnippetToolBar">
+<DIV class="codeSnippetToolBarText"><A name="CodeSnippetCopyLink" title="Copy to clipboard." 
+style="display: none;" href="javascript:if (window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_43394d99-559b-4605-85c5-486957a60c3c');">Copy</A> 
+            </DIV></DIV>
+<DIV class="codeSnippetContainerCode" id="CodeSnippetContainerCode_43394d99-559b-4605-85c5-486957a60c3c" 
+dir="ltr">
+<DIV style="color: black;">
+<PRE>
+<SPAN style="color: blue;">public</SPAN> <SPAN style="color: blue;">class</SPAN> Alarm
+{
+   <SPAN style="color: blue;">private</SPAN> DateTime alarmTime;
+   <SPAN style="color: blue;">private</SPAN> <SPAN style="color: blue;">int</SPAN> interval = 10;
+
+   <SPAN style="color: blue;">public</SPAN> <SPAN style="color: blue;">event</SPAN> AlarmEventHandler AlarmEvent;
+
+   <SPAN style="color: blue;">public</SPAN> Alarm(DateTime time) : <SPAN style="color: blue;">this</SPAN>(time, 10)
+   {
+   }
+
+   <SPAN style="color: blue;">public</SPAN> Alarm(DateTime time, <SPAN style="color: blue;">int</SPAN> interval)
+   {
+      <SPAN style="color: blue;">this</SPAN>.alarmTime = time;
+      <SPAN style="color: blue;">this</SPAN>.interval = interval;
+   }
+
+   <SPAN style="color: blue;">public</SPAN> <SPAN style="color: blue;">void</SPAN> Set()
+   {
+      <SPAN style="color: blue;">while</SPAN> (<SPAN style="color: blue;">true</SPAN>) {
+         System.Threading.Thread.Sleep(2000);
+         DateTime currentTime = DateTime.Now;
+         <SPAN style="color: green;">// Test whether it is time for the alarm to go off.</SPAN>
+         <SPAN style="color: blue;">if</SPAN> (currentTime.Hour == alarmTime.Hour &amp;&amp; 
+             currentTime.Minute == alarmTime.Minute)
+         {    
+            AlarmEventArgs args = <SPAN style="color: blue;">new</SPAN> AlarmEventArgs(currentTime);
+            OnAlarmEvent(args);
+            <SPAN style="color: blue;">if</SPAN> (! args.Snooze) 
+               <SPAN style="color: blue;">return</SPAN>;
+            <SPAN style="color: blue;">else</SPAN>
+               <SPAN style="color: blue;">this</SPAN>.alarmTime = <SPAN style="color: blue;">this</SPAN>.alarmTime.AddMinutes(<SPAN style="color: blue;">this</SPAN>.interval);
+         }
+      }
+   } 
+
+   <SPAN style="color: blue;">protected</SPAN> <SPAN style="color: blue;">void</SPAN> OnAlarmEvent(AlarmEventArgs e)
+   {
+      AlarmEvent(<SPAN style="color: blue;">this</SPAN>, e);
+   }  
+}
+
+
+</PRE></DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV>
+<DIV class="LW_CollapsibleArea_TitleDiv">
+<DIV><A title="Collapse" class="LW_CollapsibleArea_TitleAhref" href="javascript:void(0)"><SPAN 
+class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></SPAN><SPAN class="LW_CollapsibleArea_Title">See 
+Also</SPAN></A>
+<DIV class="LW_CollapsibleArea_HrDiv">
+<HR class="LW_CollapsibleArea_Hr">
+</DIV></DIV></DIV>
+<DIV class="sectionblock"><A id="seeAlsoToggle"></A>
+<H4 class="subHeading">Tasks</H4>
+<DIV class="seeAlsoStyle"><SPAN><A href="http://msdn.microsoft.com/en-us/library/9aackb16(v=vs.100).aspx">How 
+to: Raise and Consume Events</A></SPAN></DIV>
+<DIV class="seeAlsoStyle"><SPAN><A href="http://msdn.microsoft.com/en-us/library/5z57dxz2(v=vs.100).aspx">How 
+to: Implement Events in Your Class</A></SPAN></DIV>
+<H4 class="subHeading">Concepts</H4>
+<DIV class="seeAlsoStyle"><SPAN><A href="http://msdn.microsoft.com/en-us/library/17sde2xt(v=vs.100).aspx">Events 
+and Delegates</A></SPAN></DIV>
+<H4 class="subHeading">Other Resources</H4>
+<DIV class="seeAlsoStyle"><SPAN><A href="http://msdn.microsoft.com/en-us/library/edzehd2t(v=vs.100).aspx">Handling 
+and Raising Events</A></SPAN></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV id="contentFeedback">
+<FORM action="/en-us/library/feedback/add/wkzf914z(v=vs.100).aspx" 
+method="post"><INPUT name="__RequestVerificationToken" type="hidden" value="d_62gFQCaAXThk50HHwyscZW1kRVs7OX8yGLjR98bbeYICu0Dnan2EAwr60_ux55I3PLNqqy55CL-cWpncJnDAHDwFlePoQoxIfNr90E0Ybz31mcNtVejv9llh7G2GTBMgWE2Q2"> 
+    
+<DIV id="contentFeedbackContainer">
+<DIV class="FeedbackTitleContainer"><A name="feedback"></A>        Did you find 
+this helpful?             <INPUT name="rdIsUseful" id="rdIsUsefulYes" onclick="toggleContentFeedback('Yes');" 
+type="radio" value="1"><LABEL for="rdIsUsefulYes">Yes</LABEL>             <INPUT 
+name="rdIsUseful" id="rdIsUsefulNo" onclick="toggleContentFeedback('No');" type="radio" 
+value="0"><LABEL for="rdIsUsefulNo">No</LABEL>                 </DIV>
+<DIV id="contentFeedbackQAContainer">
+<DIV class="FeedbackListContainer" id="feedbackListNoContainer">
+<DIV><INPUT name="chkbxNo" id="chkbxNo201" type="checkbox" value="201">          
+                       <LABEL for="chkbxNo201">Not accurate</LABEL>              
+               </DIV>
+<DIV><INPUT name="chkbxNo" id="chkbxNo202" type="checkbox" value="202">          
+                       <LABEL for="chkbxNo202">Not enough depth</LABEL>          
+                   </DIV>
+<DIV><INPUT name="chkbxNo" id="chkbxNo203" type="checkbox" value="203">          
+                       <LABEL for="chkbxNo203">Need more code examples</LABEL>   
+                          </DIV></DIV>
+<DIV class="FeedbackTellUsMoreContainer"><TEXTAREA name="feedbackText" class="TellUsMoreTextBoxSearchLoaded" id="feedbackText" onmouseover="TextBoxCharactersCounter(this, document.getElementById('feedbackTextCounter'), 1500)" onkeydown="TextBoxCharactersCounter(this, document.getElementById('feedbackTextCounter'), 1500)" onkeyup="TextBoxCharactersCounter(this, document.getElementById('feedbackTextCounter'), 1500)" onfocus="WatermarkFocus(this, 'Tell us more...', 'TellUsMoreTextBoxSearch')" onblur="WatermarkBlur(this, 'Tell us more...', 'TellUsMoreTextBoxSearchLoaded')">Tell us more...</TEXTAREA> 
+                </DIV><SPAN class="counter">(<SPAN 
+id="feedbackTextCounter">1500</SPAN> characters remaining)</SPAN>                
+ <INPUT name="returnUrl" id="returnUrl" type="hidden" value="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx"> 
+                <INPUT title="Click to Submit Feedback" id="submit" onclick="WatermarkOnSubmit(document.getElementById('feedbackText'), 'Tell us more...', 'TellUsMoreTextBoxSearch')" type="submit" value="Submit"> 
+                
+<DIV style="clear: both;"></DIV></DIV></DIV></FORM></DIV>
+<SCRIPT id="CommentTemplate" type="text/x-jquery-tmpl">
+    <div class="communityContentAnnotation">
+        <a name="${Index}"></a>
+        <h3>
+            ${Title}
+        </h3>
+        <div class="communityContentAnnotationBody">
+            {{html Body}}
+        </div>
+        <div class="communityContentAnnotationInfo">
+            <div class="communityContentAnnotationAvatarContainer">
+                <a href="${UserAvatar.Href}" title="${UserAvatar.ToolTip}" class="communityContentAnnotationAvatar"><img src="${UserAvatar.ImageUrl}" alt="${UserAvatar.ImageAltText}" width="34" height="34" /></a>
+            </div>
+            <div class="communityContentAnnotationUserDateContainer">
+                <div class="communityContentAnnotationUserContainer">
+                    <a href="${UserAvatar.Href}">
+                        ${User}
+                    </a>
+                </div>
+                <div class="communityContentAnnotationDateContainer">
+                    <span>${Date}</span>
+                    
+                    {{if EditLink}}
+                        <span>
+                            <a href="${EditLink.Href}" title="${EditLink.ToolTip}" class="communityContentCommentEditLink">${EditLink.Title}</a>
+                        </span>
+                    {{/if}}
+
+                    {{if DeleteLink}}
+                        <span>
+                            <a href="${DeleteLink.Href}" title="${DeleteLink.ToolTip}" class="communityContentDeleteLink">${DeleteLink.Title}</a>
+                        </span>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</SCRIPT>
+ 
+<DIV class="communityContentContainer">
+<DIV class="communityContentHeader" id="CommunityContentHeader">
+<DIV class="communityContentHeaderTitleContainer">
+<H2>Community Additions</H2><A class="communityContentAddLink" href="http://msdn.microsoft.com/en-us/library/community/add/wkzf914z(v=vs.100).aspx"><SPAN 
+title="Add" class="communityContentAddButton">                        ADD        
+             </SPAN>                 </A></DIV>
+<DIV style="clear: both;"></DIV></DIV>
+<DIV id="CommunityComments" data-url="/en-us/library/community/comments/wkzf914z(v=vs.100).aspx"></DIV></DIV>
+<DIV class="libraryMemberFilter">
+<DIV class="filterContainer"><SPAN>Show:</SPAN>         <LABEL><INPUT class="libraryFilterInherited" 
+type="checkbox" checked="checked" value="Inherit">Inherited         </LABEL>     
+    <LABEL><INPUT class="libraryFilterProtected" type="checkbox" checked="checked" 
+value="Protected">Protected         </LABEL>     </DIV></DIV><INPUT id="libraryMemberFilterEmptyWarning" 
+type="hidden" value="There are no members available with your current filter settings."> 
+ </DIV></DIV>
+<DIV class="clear"></DIV><INPUT name="__RequestVerificationToken" type="hidden" 
+value="S0AhqDFnFfFR_6vBRmTXcp2uUoA7Hynh2YSvfvrZzyotbD4Sm50xiiAGsJQt8mQmCyrqKmCwMPdzHXoIg5NrwFl7_--nhpQFbbEVixkozryj0NTLLDxta_gxX5bu4bD4-CKv5A2"> 
+<INPUT id="ratingSubmitUrl" type="hidden" value="http://msdn.microsoft.com/en-us/library/feedback/add/wkzf914z(v=vs.100).aspx"> 
+<INPUT id="isTopicRated" type="hidden" value="false">     
+<DIV id="ux-footer"><FOOTER class="top">
+<DIV id="Fragment_LeftLinks" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="LeftLinks">
+<DIV class="LinkList">
+<DIV class="LinkListTitle">Dev centers</DIV>
+<DIV class="Links">
+<UL class="LinkColumn" style="width: 100%;">
+  <LI><A class="windowsBlue" id="27861_1" href="http://msdn.microsoft.com/windows" 
+  xmlns="http://www.w3.org/1999/xhtml">Windows</A>         </LI>
+  <LI><A class="windowsPurple" id="27861_2" href="http://dev.windowsphone.com/" 
+  xmlns="http://www.w3.org/1999/xhtml">Windows Phone</A>         </LI>
+  <LI><A class="office" id="27861_3" href="http://msdn.microsoft.com/office" 
+  xmlns="http://www.w3.org/1999/xhtml">Office</A>         </LI>
+  <LI><A class="windowsBlue" id="27861_4" href="http://www.windowsazure.com/en-us/documentation/" 
+  xmlns="http://www.w3.org/1999/xhtml">Windows Azure</A>         </LI>
+  <LI><A class="visualStudio" id="27861_5" href="http://msdn.microsoft.com/vstudio" 
+  xmlns="http://www.w3.org/1999/xhtml">Visual Studio</A>         </LI>
+  <LI><A id="27861_6" href="http://msdn.microsoft.com/aa937802" xmlns="http://www.w3.org/1999/xhtml">More...</A> 
+          </LI></UL></DIV></DIV></DIV>
+<DIV id="rightLinks">
+<DIV id="Fragment_CenterLinks1" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks1">
+<DIV class="LinkList">
+<DIV class="LinkListTitle">Learning resources</DIV>
+<DIV class="LinkListDescription"></DIV>
+<DIV class="Links">
+<UL class="LinkColumn" style="width: 100%;">
+  <LI><A id="27861_14" href="http://www.microsoftvirtualacademy.com/" xmlns="http://www.w3.org/1999/xhtml">Microsoft 
+  Virtual Academy</A>         </LI>
+  <LI><A id="27861_16" href="http://channel9.msdn.com/" xmlns="http://www.w3.org/1999/xhtml">Channel 
+  9</A>         </LI>
+  <LI><A id="27861_17" href="http://www.interoperabilitybridges.com/" xmlns="http://www.w3.org/1999/xhtml">Interoperability 
+  Bridges</A>         </LI>
+  <LI><A id="CenterLinks1_427_33" href="http://msdn.microsoft.com/magazine/" 
+  xmlns="http://www.w3.org/1999/xhtml">MSDN Magazine</A>         
+</LI></UL></DIV></DIV></DIV>
+<DIV id="Fragment_CenterLinks2" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks2">
+<DIV class="LinkList">
+<DIV class="LinkListTitle">Community</DIV>
+<DIV class="LinkListDescription"></DIV>
+<DIV class="Links">
+<UL class="LinkColumn" style="width: 100%;">
+  <LI><A id="27861_19" href="http://social.msdn.microsoft.com/forums/en-us/home" 
+  xmlns="http://www.w3.org/1999/xhtml">Forums</A>         </LI>
+  <LI><A id="27861_20" href="http://blogs.msdn.com/b/developer-tools/" xmlns="http://www.w3.org/1999/xhtml">Blogs</A> 
+          </LI>
+  <LI><A id="27861_22" href="http://www.codeplex.com/" xmlns="http://www.w3.org/1999/xhtml">Codeplex</A> 
+          </LI></UL></DIV></DIV></DIV>
+<DIV id="Fragment_CenterLinks3" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks3">
+<DIV class="LinkList">
+<DIV class="LinkListTitle">Support</DIV>
+<DIV class="LinkListDescription"></DIV>
+<DIV class="Links">
+<UL class="LinkColumn" style="width: 100%;">
+  <LI><A id="CenterLinks3_427_34" href="http://msdn.microsoft.com/hh361695" 
+  xmlns="http://www.w3.org/1999/xhtml">Self support</A>         </LI>
+  <LI><A id="27861_24" href="http://support.microsoft.com/" xmlns="http://www.w3.org/1999/xhtml">Other 
+  support options</A>         </LI></UL></DIV></DIV></DIV>
+<DIV id="Fragment_CenterLinks4" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="CenterLinks4">
+<DIV class="LinkList">
+<DIV class="LinkListTitle">Programs</DIV>
+<DIV class="LinkListDescription"></DIV>
+<DIV class="Links">
+<UL class="LinkColumn" style="width: 100%;">
+  <LI><A id="27861_27" href="http://www.microsoft.com/bizspark/" xmlns="http://www.w3.org/1999/xhtml">BizSpark 
+  (for startups)</A>         </LI>
+  <LI><A id="27861_28" href="https://www.dreamspark.com/" xmlns="http://www.w3.org/1999/xhtml">DreamSpark</A> 
+          </LI>
+  <LI><A id="27861_29" href="https://www.microsoft.com/faculty" xmlns="http://www.w3.org/1999/xhtml">Faculty 
+  Connection</A>         </LI>
+  <LI><A id="CenterLinks4_427_32" href="http://www.microsoft.com/student/" 
+  xmlns="http://www.w3.org/1999/xhtml">Microsoft Student</A>         
+</LI></UL></DIV></DIV></DIV>
+<DIV class="feedbackContainer">
+<DIV class="clear" id="feedbackSection1">
+<DIV class="left">Did you find this helpful?</DIV>
+<DIV class="left">
+<DIV class="left"><INPUT name="feedback" class="feedbackYesClick" id="feedbackYes" 
+type="radio" value="1" data-enhance="false"><LABEL class="feedbackYesClick" for="feedbackYes"> 
+Yes</LABEL>                 </DIV>
+<DIV class="left"><INPUT name="feedback" class="feedbackNoClick" id="feedbackNo" 
+type="radio" value="0" data-enhance="false"><LABEL class="feedbackNoClick" for="feedbackNo"> 
+No</LABEL>                 </DIV></DIV><A name="feedback" 
+class="rateThisAnchor"></A>         </DIV>
+<DIV class="clear" id="feedbackSection2"></DIV>
+<DIV class="clear" id="feedbackSection3">
+<DIV><INPUT name="chkbxNo" id="checkboxNo201" type="checkbox" value="201" 
+data-enhance="false">                         <LABEL for="checkboxNo201">Not 
+accurate</LABEL>                     </DIV>
+<DIV><INPUT name="chkbxNo" id="checkboxNo202" type="checkbox" value="202" 
+data-enhance="false">                         <LABEL for="checkboxNo202">Not 
+enough depth</LABEL>                     </DIV>
+<DIV><INPUT name="chkbxNo" id="checkboxNo203" type="checkbox" value="203" 
+data-enhance="false">                         <LABEL for="checkboxNo203">Need 
+more code examples</LABEL>                     </DIV></DIV>
+<DIV class="clear" id="feedbackSection4">
+<DIV><TEXTAREA name="feedbackText" class="TellUsMoreTextBoxSearchLoaded" id="feedbackTextArea" data-enhance="false">Tell us more...</TEXTAREA> 
+            </DIV>
+<DIV class="left"><SPAN class="counter">(<SPAN 
+id="feedbackTextCounter">1500</SPAN> characters remaining)</SPAN></DIV>
+<DIV 
+class="right"><INPUT title="Click to Submit Feedback" id="feedbackSubmit" type="submit" value="Submit" data-enhance="false"> 
+            </DIV></DIV>
+<DIV id="feedbackSection5">Thank you for your feedback</DIV><INPUT id="feedbackValue" 
+type="hidden">         <INPUT id="tellUsMoreText" type="hidden" value="Tell us more..."> 
+        <INPUT id="maxTextBoxCharacters" type="hidden" value="1500">     
+</DIV></DIV></FOOTER><FOOTER class="bottom"><SPAN class="localeContainer">
+<FORM class="selectLocale" id="selectLocaleForm" action="http://msdn.microsoft.com/en-us/SelectLocale"><INPUT 
+name="fromPage" type="hidden" value="http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fwkzf914z(v%3dvs.100).aspx"> 
+        <A title="Change your language" onclick="$('#selectLocaleForm').submit();return false;" 
+href="http://msdn.microsoft.com/en-us/library/wkzf914z(v=vs.100).aspx#">United 
+States (English)</A>     </FORM></SPAN>                 
+<DIV id="Fragment_BottomLinks" xmlns="http://www.w3.org/1999/xhtml" 
+data-fragmentname="BottomLinks">
+<DIV class="LinkList">
+<DIV class="LinkListDescription"></DIV>
+<DIV class="Links">
+<UL class="LinkColumn horizontal">
+  <LI><A id="27861_8" href="http://msdn.microsoft.com/newsletter.aspx" xmlns="http://www.w3.org/1999/xhtml">Newsletter</A> 
+          </LI>
+  <LI><A id="27861_10" href="http://privacy.microsoft.com/default.mspx" xmlns="http://www.w3.org/1999/xhtml">Privacy 
+  &amp; cookies</A>         </LI>
+  <LI><A id="27861_11" href="http://msdn.microsoft.com/cc300389.aspx" xmlns="http://www.w3.org/1999/xhtml">Terms 
+  of Use</A>         </LI>
+  <LI><A id="27861_12" href="http://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" 
+  xmlns="http://www.w3.org/1999/xhtml">Trademarks</A>         
+</LI></UL></DIV></DIV></DIV><SPAN class="logoLegal"><SPAN class="logo"></SPAN>   
+          <SPAN class="copyright">© 2013 Microsoft</SPAN>         </SPAN>     
+</FOOTER></DIV>
+<DIV class="footerPrintView">
+<DIV class="footerCopyrightPrintView">© 2013 Microsoft. All rights 
+reserved.</DIV></DIV><INPUT id="tocPaddingPerLevel" type="hidden" value="17">    
+                 <INPUT id="MtpsDevice" type="hidden" value="Default"> <!--[CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. ]]--> 
+                                                                            
+<NOSCRIPT>&lt;div&gt;&lt;img alt="DCSIMG" id="Img1" width="1" height="1" 
+src="http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No" 
+/&gt;&lt;/div&gt;</NOSCRIPT> <NOSCRIPT>  &lt;a href="http://www.omniture.com" 
+title="Web Analytics"&gt;    &lt;img 
+src="//msstonojsmsdn.112.2o7.net/b/ss/msstonojsmsdn/1/H.20.2--NS/0" height="1" 
+width="1" border="0" alt="" /&gt;  &lt;/a&gt; </NOSCRIPT> 
+<DIV id="globalRequestVerification"><INPUT name="__RequestVerificationToken" 
+type="hidden" value="xEb734QOwfqMFiooXY1rzflMpQ6-rzjyMeOo0b9CRDaK4TRLD1DhtCJz4qiUggSPJt8-o7hWBYYL51l5w0MJDtu9RwUkELg08huR-hqrWFLD6OBJjQXpBVBvKrjnEp09MSEGlA2"> 
+</DIV></DIV>
+<SCRIPT class="mtps-injected" type="text/javascript">
+/*<![CDATA[*/
+(function(window,document){"use strict";function preload(scripts){for(var result=[],script,e,i=0;i<scripts.length;i++)script=scripts[i],script.hasOwnProperty("url")&&(e=document.createElement("script"),e.src=script.url,script.throwaway=e),result.push(script);return result}function inject(scripts,index){var script,elem;if(index>=scripts.length){delete mtps.injectScripts;return}script=scripts[index];elem=document.createElement("script");elem.className="mtps-injected";elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext;script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }");parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
+MTPS.injectScripts([
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"http://i.msdn.microsoft.com\", \r\n\t\"js\": \"http://i2.msdn.microsoft.com\", \r\n\t\"css\": \"http://i3.msdn.microsoft.com\"\r\n});\r\n/**/" },
+	{ url: "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" },
+	{ txt: "//\n  var literalNormalizedUrl = \u0027/en-us/library/wkzf914z(d=default,l=en-us,v=vs.100).aspx\u0027;\n  var wt_nvr_ru = \u0027WT_NVR_RU\u0027;\n  var wt_fpcdom = \u0027.microsoft.com\u0027;\n  var wt_domlist = \u0027msdn.microsoft.com\u0027;\n  var wt_pathlist = \u0027\u0027;\n  var wt_paramlist = \u0027DCSext.mtps_devcenter\u0027;\n  var wt_siteid = \u0027MSDN\u0027;\n  var gDomain = \u0027m.webtrends.com\u0027;\n  var gDcsId = \u0027dcsmgru7m99k7mqmgrhudo0k8_8c6m\u0027;\n  var gFpc = \u0027WT_FPC\u0027;\n\n\n\n  if (document.cookie.indexOf(gFpc + \"=\") == -1) {\n    var wtidJs = document.createElement(\"script\");\n    wtidJs.src = \"//\" + gDomain + \"/\" + gDcsId + \"/wtid.js\";\n    document.getElementsByTagName(\"head\")[0].appendChild(wtidJs);\n  }\n\n\n\n  var detectedLocale = \u0027en-us\u0027;\n  var wtsp = \u0027msdnlib_dotnet\u0027;\n  var gTrackEvents = \u00270\u0027;\n/**/" },
+	{ txt: "/**/\n  var omni_guid = \"2ce5e926-b4fc-49e9-9f95-49f29a42a1c2\";\n/**/" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:Utilities,0:Topic,1:webtrendsscript,2:omni_rsid_MSDN,3:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Global/Content/Webtrends/resources:1,/Areas/Global/Content/Omniture/resources/MSDN:2,/Areas/Epx/Themes/Base/Content:3\u0026amp;hashKey=61F0FB52A7A36B61DFB9AFD9270F0B57" },
+	{ url: "http://i2.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox\u0026btnid=HeaderSearchButton\u0026brand=MSDN\u0026loc=en-us\u0026focusOnInit=false\u0026emptyWatermark=true" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:layout,1:Header,2:Toc,2:NavigationResize,3:FeedbackCounter;/Areas/Centers/Themes/Base/Content:0,/Areas/Centers/Themes/Msdn/Content:1,/Areas/Epx/Library/Content:2,/Areas/Epx/Shared/Content:3\u0026amp;hashKey=F2352A55EA50DF5EA597EAD4B7E1BD9B" },
+	{ txt: "MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = \u0027Expand\u0027; MTPS.LocalizedStrings.CollapseButtonTooltip = \u0027Collapse\u0027;" },
+	{ url: "http://i2.msdn.microsoft.com/Areas/Epx/Shared/Content/Feedback.js" },
+	{ url: "http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:CommunityContent,1:LibraryMemberFilter,2:Rating,0:CodeSnippet,0:TopicNotInScope,0:CollapsibleArea,0:VersionSelector,0:SurveyBroker;/Areas/Epx/Content/Scripts:0,/Areas/Epx/Library/Content:1,/Areas/Centers/Themes/Msdn/Content:2\u0026amp;hashKey=894F5453CF3624F4EB7F3268ED84732F" },
+	{ txt: "$(document).ready(function() {\n        try {\n            var token = $(\"#globalRequestVerification input[name=\u0027__RequestVerificationToken\u0027]\").clone();\n            $(\"#siteFeedbackForm\").append(token);\n        } catch(err) {\n            \n        }\n    });" }
+]);
+
+/*]]>*/
+</SCRIPT>
+ </BODY></HTML>

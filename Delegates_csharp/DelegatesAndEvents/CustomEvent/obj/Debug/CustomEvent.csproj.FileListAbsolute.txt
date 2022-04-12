@@ -1,0 +1,8 @@
+D:\Chapter 6\Chapter 6\Sample\CustomEvent\bin\Debug\CustomEvent.exe
+D:\Chapter 6\Chapter 6\Sample\CustomEvent\bin\Debug\CustomEvent.pdb
+D:\Chapter 6\Chapter 6\Sample\CustomEvent\obj\Debug\CustomEvent.csprojResolveAssemblyReference.cache
+D:\Chapter 6\Chapter 6\Sample\CustomEvent\obj\Debug\CustomEvent.Form1.resources
+D:\Chapter 6\Chapter 6\Sample\CustomEvent\obj\Debug\CustomEvent.csproj.GenerateResource.cache
+D:\Chapter 6\Chapter 6\Sample\CustomEvent\obj\Debug\CustomEvent.csproj.CoreCompileInputs.cache
+D:\Chapter 6\Chapter 6\Sample\CustomEvent\obj\Debug\CustomEvent.exe
+D:\Chapter 6\Chapter 6\Sample\CustomEvent\obj\Debug\CustomEvent.pdb

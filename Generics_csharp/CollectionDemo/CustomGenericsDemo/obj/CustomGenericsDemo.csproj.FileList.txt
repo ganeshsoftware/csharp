@@ -1,0 +1,7 @@
+.\bin\Debug\CustomGenericsDemo.exe
+.\bin\Debug\CustomGenericsDemo.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CustomGenericsDemo.Properties.Resources.resources
+obj\Debug\CustomGenericsDemo.csproj.GenerateResource.Cache
+obj\Debug\CustomGenericsDemo.exe
+obj\Debug\CustomGenericsDemo.pdb

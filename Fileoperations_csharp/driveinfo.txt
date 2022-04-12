@@ -1,0 +1,33 @@
+
+************************************************
+The Name of the Drive is C:\
+The DriveFormat is NTFS
+The Type of the Drive is Fixed
+The Ready status is True
+The total free space is 77001805824
+The total size is 157286395904
+************************************************
+
+
+************************************************
+The Name of the Drive is E:\
+The DriveFormat is NTFS
+The Type of the Drive is Fixed
+The Ready status is True
+The total free space is 203772825600
+The total size is 287834107904
+************************************************
+
+
+************************************************
+The Name of the Drive is F:\
+The DriveFormat is NTFS
+The Type of the Drive is Fixed
+The Ready status is True
+The total free space is 554437627904
+The total size is 554557239296
+************************************************
+
+
+************************************************
+The Name of the Drive is G:\

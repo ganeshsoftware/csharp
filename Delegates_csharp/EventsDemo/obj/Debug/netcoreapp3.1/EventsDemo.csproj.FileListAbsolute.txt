@@ -1,0 +1,13 @@
+E:\csharp\Delegates_csharp\EventsDemo\bin\Debug\netcoreapp3.1\EventsDemo.exe
+E:\csharp\Delegates_csharp\EventsDemo\bin\Debug\netcoreapp3.1\EventsDemo.deps.json
+E:\csharp\Delegates_csharp\EventsDemo\bin\Debug\netcoreapp3.1\EventsDemo.runtimeconfig.json
+E:\csharp\Delegates_csharp\EventsDemo\bin\Debug\netcoreapp3.1\EventsDemo.runtimeconfig.dev.json
+E:\csharp\Delegates_csharp\EventsDemo\bin\Debug\netcoreapp3.1\EventsDemo.dll
+E:\csharp\Delegates_csharp\EventsDemo\bin\Debug\netcoreapp3.1\EventsDemo.pdb
+E:\csharp\Delegates_csharp\EventsDemo\obj\Debug\netcoreapp3.1\EventsDemo.csproj.AssemblyReference.cache
+E:\csharp\Delegates_csharp\EventsDemo\obj\Debug\netcoreapp3.1\EventsDemo.AssemblyInfoInputs.cache
+E:\csharp\Delegates_csharp\EventsDemo\obj\Debug\netcoreapp3.1\EventsDemo.AssemblyInfo.cs
+E:\csharp\Delegates_csharp\EventsDemo\obj\Debug\netcoreapp3.1\EventsDemo.csproj.CoreCompileInputs.cache
+E:\csharp\Delegates_csharp\EventsDemo\obj\Debug\netcoreapp3.1\EventsDemo.dll
+E:\csharp\Delegates_csharp\EventsDemo\obj\Debug\netcoreapp3.1\EventsDemo.pdb
+E:\csharp\Delegates_csharp\EventsDemo\obj\Debug\netcoreapp3.1\EventsDemo.genruntimeconfig.cache

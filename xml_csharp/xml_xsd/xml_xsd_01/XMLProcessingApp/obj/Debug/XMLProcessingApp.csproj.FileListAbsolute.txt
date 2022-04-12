@@ -1,0 +1,39 @@
+C:\Users\normesta\Documents\Visual Studio 2013\Projects\XMLProcessingApp\XMLProcessingApp\bin\Debug\XMLProcessingApp.exe
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\bin\Debug\booksData.xml
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\bin\Debug\XMLProcessingApp.exe
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\bin\Debug\XMLProcessingApp.pdb
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.csprojResolveAssemblyReference.cache
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.Form1.resources
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.Properties.Resources.resources
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.csproj.GenerateResource.Cache
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.exe
+D:\GaneshN\CoreDOTNET\XML\Manipulate XML in-memory by using the XmlDocument class and other related types\C#\XMLProcessingApp\obj\Debug\XMLProcessingApp.pdb
+D:\Mini_Projects\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.exe
+D:\Mini_Projects\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.pdb
+D:\Mini_Projects\BooksProject\BooksProject\XMLProcessingApp\bin\Debug\booksData.xml
+D:\Mini_Projects\BooksProject\BooksProject\XMLProcessingApp\bin\Debug\XMLProcessingApp.exe
+D:\Mini_Projects\BooksProject\BooksProject\XMLProcessingApp\bin\Debug\XMLProcessingApp.pdb
+D:\Mini_Projects\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.csprojResolveAssemblyReference.cache
+D:\Mini_Projects\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.Form1.resources
+D:\Mini_Projects\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.Properties.Resources.resources
+D:\Mini_Projects\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.csproj.GenerateResource.Cache
+D:\MINI_PROJS\BooksProject\BooksProject\XMLProcessingApp\bin\Debug\booksData.xml
+D:\MINI_PROJS\BooksProject\BooksProject\XMLProcessingApp\bin\Debug\XMLProcessingApp.exe
+D:\MINI_PROJS\BooksProject\BooksProject\XMLProcessingApp\bin\Debug\XMLProcessingApp.pdb
+D:\MINI_PROJS\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.csprojAssemblyReference.cache
+D:\MINI_PROJS\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.Form1.resources
+D:\MINI_PROJS\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.Properties.Resources.resources
+D:\MINI_PROJS\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.csproj.GenerateResource.cache
+D:\MINI_PROJS\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.csproj.CoreCompileInputs.cache
+D:\MINI_PROJS\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.exe
+D:\MINI_PROJS\BooksProject\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.pdb
+D:\WINDOWS_DEV\Windows_XML_XSD_BookApp\BooksProject\XMLProcessingApp\bin\Debug\booksData.xml
+D:\WINDOWS_DEV\Windows_XML_XSD_BookApp\BooksProject\XMLProcessingApp\bin\Debug\XMLProcessingApp.exe
+D:\WINDOWS_DEV\Windows_XML_XSD_BookApp\BooksProject\XMLProcessingApp\bin\Debug\XMLProcessingApp.pdb
+D:\WINDOWS_DEV\Windows_XML_XSD_BookApp\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.csprojAssemblyReference.cache
+D:\WINDOWS_DEV\Windows_XML_XSD_BookApp\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.Form1.resources
+D:\WINDOWS_DEV\Windows_XML_XSD_BookApp\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.Properties.Resources.resources
+D:\WINDOWS_DEV\Windows_XML_XSD_BookApp\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.csproj.GenerateResource.cache
+D:\WINDOWS_DEV\Windows_XML_XSD_BookApp\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.csproj.CoreCompileInputs.cache
+D:\WINDOWS_DEV\Windows_XML_XSD_BookApp\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.exe
+D:\WINDOWS_DEV\Windows_XML_XSD_BookApp\BooksProject\XMLProcessingApp\obj\Debug\XMLProcessingApp.pdb

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B006C508-827E-4893-9E7B-13B0814025F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1F2A8DF-E441-4057-82E5-1539D91D2411}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LinqRestriction", "src\LinqRestriction\LinqRestriction.xproj", "{7267EC88-B520-4838-B465-1DC49B652DDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7267EC88-B520-4838-B465-1DC49B652DDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7267EC88-B520-4838-B465-1DC49B652DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7267EC88-B520-4838-B465-1DC49B652DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7267EC88-B520-4838-B465-1DC49B652DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7267EC88-B520-4838-B465-1DC49B652DDB} = {B006C508-827E-4893-9E7B-13B0814025F7}
+	EndGlobalSection
+EndGlobal

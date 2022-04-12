@@ -1,0 +1,154 @@
+
+
+
+
+
+
+
+
+ildasm - intermediate language disassembler
+
+
+1) Create a strong name key
+---------------------------
+sn -k doctor.snk
+
+
+2) Extract the public key
+--------------------------
+sn -p doctor.snk doctorpublickey.snk
+
+
+3) Extract the public key Token
+---------------------------------
+sn -t Tdoctorpublickey.snk > PublicToken.txt
+
+
+4) Compile the Source file as a library with a keyfile.
+-------------------------------------------------------
+csc /t:library doctor.cs /keyfile:doctor.snk 
+
+
+5) Get Public-Key from the snk
+------------------------------
+1. byte[] snk = File.ReadAllBytes("doctor.snk");
+2. byte[] publicKey = GetPublicKey(snk);
+
+------
+method
+------
+public static byte[] GetPublicKey(byte[] snk)
+{
+    var snkp = new StrongNameKeyPair(snk);
+    byte[] publicKey = snkp.PublicKey;
+    return publicKey;
+}
+
+
+
+
+6) Installing an assembly in GAC
+--------------------------------
+gacutil -i DoctorLibrary.dll 
+
+
+
+7) UnInstalling an assembly in GAC
+----------------------------------
+gacutil -u "DoctorLibrary, Version=0.0.0.0, Culture=neutral, PublicKeyToken=86b7147591ae5591, processorArchitecture=MSIL"
+
+
+
+
+
+
+
+
+6) Get Public-Key-Token from the snk
+------------------------------------
+1. byte[] publicKeyToken = GetPublicKeyToken(publicKey);
+------
+method
+------
+public static byte[] GetPublicKeyToken(byte[] publicKey)
+{
+    using (var csp = new SHA1CryptoServiceProvider())
+    {
+        byte[] hash = csp.ComputeHash(publicKey);
+        byte[] token = new byte[8];
+        for (int i = 0; i < 8; i++)
+        {
+            token[i] = hash[hash.Length - i - 1];
+        }
+        return token;
+    }
+}
+
+
+
+
+
+
+
+
+
+7) 
+Assembly myDll = Assembly.Load("myDll, Version=1.0.0.1, Culture=neutral, PublicKeyToken=9b35aa32c18d4fb1");
+
+8) 
+/reference:myDll, Version=1.1.0.0, Culture=en, PublicKeyToken=03689116d3a4ae33
+
+9) 
+
+
+csc DoctorLibrary.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=86b7147591ae5591, processorArchitecture=MSIL
+
+
+
+
+
+
+
+9) .NET Core
+------------
+
+Since StrongNameKeyPair is not available in net5.0 or netstandard2.1 and since sn.exe requires Administrator privileges yoy may use the class RSACryptoServiceProvider instead:
+
+$bytes = Get-Content "YOUR-PROJECT.snk" -AsByteStream
+$rsa = New-Object System.Security.Cryptography.RSACryptoServiceProvider
+$rsa.ImportCspBlob($bytes)
+
+$publicKey = $rsa.ExportRSAPublicKey()
+$privateKey = $rsa.ExportRSAPrivateKey()
+static void Main()
+{
+  byte[] bytes = File.ReadAllBytes("YOUR-PROJECT.snk");
+  RSACryptoServiceProvider rsa = new();
+
+  rsa.ImportCspBlob(bytes);
+
+  byte[] publicKey = rsa.ExportRSAPublicKey();
+  byte[] privateKey = rsa.ExportRSAPrivateKey();
+} 
+
+
+
+
+8) Powershell version
+----------------------
+
+In addition to @xanatos answer, PowerShell version if anyone needs it:
+
+function Get-SnkPublicKey([string]$FilePath)
+{
+    $bytes = [System.IO.File]::ReadAllBytes($FilePath)
+    $pair = New-Object System.Reflection.StrongNameKeyPair -ArgumentList @(,$bytes)
+    $publicKey = $pair.PublicKey
+
+    #[System.Convert]::ToBase64String($publicKey)
+    $hexes = [System.BitConverter]::ToString($publicKey);
+    $hexes.Replace("-", "")
+} 
+
+References:-
+1) https://stackoverflow.com/questions/29768562/obtain-net-publickeytoken-from-snk-file

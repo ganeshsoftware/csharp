@@ -1,0 +1,12 @@
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\bin\Debug\ObserverPattern.exe
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\bin\Debug\ObserverPattern.pdb
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.csproj.AssemblyReference.cache
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.BallObserver.resources
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.MovingBallObserver.resources
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.ObserverPattern.Observer.SimpleObserver.resources
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.Properties.Resources.resources
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.csproj.GenerateResource.cache
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.csproj.CoreCompileInputs.cache
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.exe
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.pdb
+E:\csharp\Collections_csharp\ObserverPattern\ObserverPattern\ObserverPattern\obj\x86\Debug\ObserverPattern.MainForm.resources

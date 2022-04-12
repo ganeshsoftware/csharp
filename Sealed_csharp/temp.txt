@@ -1,0 +1,8 @@
+Sealed Class:
+--------------
+
+
+3) NOTE: In most perfomance-enhancing tools on the market nowadays, you will find a 
+checkbox that will seal all your classes that aren't inherited. Be careful though, 
+because if you want to allow plugins or assembly discovery through MEF, 
+you will run into problems.

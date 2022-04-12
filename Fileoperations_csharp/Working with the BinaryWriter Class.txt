@@ -1,0 +1,18 @@
+\\Sri Ganesh
+
+using System;
+using System.IO;
+   
+class MainClass
+{
+    static public void Main()
+    {
+     FileStream BinaryFile = new FileStream("test.dat", FileMode.Create, FileAccess.ReadWrite);
+     BinaryWriter  Writer = new BinaryWriter(BinaryFile);
+
+     Writer.Write('a');
+     Writer.Write(123);
+     Writer.Write(456.789);
+     Writer.Write("test string");
+    }
+}

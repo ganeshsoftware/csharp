@@ -1,0 +1,5 @@
+D:\Core_DOTNET\Linq\LinqAggregate\LinqAggregate\bin\Debug\LinqAggregate.exe.config
+D:\Core_DOTNET\Linq\LinqAggregate\LinqAggregate\bin\Debug\LinqAggregate.exe
+D:\Core_DOTNET\Linq\LinqAggregate\LinqAggregate\bin\Debug\LinqAggregate.pdb
+D:\Core_DOTNET\Linq\LinqAggregate\LinqAggregate\obj\Debug\LinqAggregate.exe
+D:\Core_DOTNET\Linq\LinqAggregate\LinqAggregate\obj\Debug\LinqAggregate.pdb

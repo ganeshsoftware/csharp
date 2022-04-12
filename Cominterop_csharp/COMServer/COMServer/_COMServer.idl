@@ -1,0 +1,72 @@
+import "C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\prsht.idl";
+import "C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\mshtml.idl";
+import "c:\program files\microsoft visual studio 8\vc\platformsdk\include\dimm.idl";
+import "C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\mshtmhst.idl";
+import "c:\program files\microsoft visual studio 8\vc\platformsdk\include\docobj.idl";
+import "C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\exdisp.idl";
+import "C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include\objsafe.idl";
+
+[
+	object,
+	uuid(015ED275-3DE6-4716-A6FA-4EBC71E4A8EA),
+	dual,
+	helpstring("IWelcome Interface"),
+	pointer_default(unique),
+	custom(0F21F359-AB84-41e8-9A78-36D110E6D2F9, "Wrox.ProCSharp.COMInterop.Server.IWelcome")
+] 
+#line 24 "c:\\procsharp\\cominterop\\comserver\\comserver\\comdemo.h"
+interface IWelcome : IDispatch {
+#line 26 "c:\\procsharp\\cominterop\\comserver\\comserver\\comdemo.h"
+	[id(1),helpstring("method Greeting")] HRESULT  Greeting([in] BSTR name, [out,retval] BSTR *message);
+};
+
+[
+	object,
+	uuid(2158751B-896E-461d-9012-EF1680BE0628),
+	dual,
+	helpstring("IMath Interface"),
+	pointer_default(unique),
+	custom(0F21F359-AB84-41e8-9A78-36D110E6D2F9, "Wrox.ProCSharp.COMInterop.Server.IMath")
+] 
+#line 39 "c:\\procsharp\\cominterop\\comserver\\comserver\\comdemo.h"
+interface IMath : IDispatch {
+#line 41 "c:\\procsharp\\cominterop\\comserver\\comserver\\comdemo.h"
+	[id(1)] HRESULT  Add([in] LONG val1, [in] LONG val2, [out,retval] LONG *result);
+	[id(2)] HRESULT  Sub([in] LONG val1, [in] LONG val2, [out,retval] LONG *result);
+};
+
+
+[ version(1.0), uuid(A6A3FBF5-0328-4B6E-87E1-EB605798866B), helpstring("COMServer 1.0 Type Library") ]
+library COMServer
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		uuid(B2CBBCD3-2993-4148-8EF4-356EACFD834B),
+		custom(0F21F359-AB84-41e8-9A78-36D110E6D2F9, "Wrox.ProCSharp.COMInterop.Server.ICompletedEvents"),
+		helpstring("_ICompletedEvents Interface")
+	] 
+#line 55 "c:\\procsharp\\cominterop\\comserver\\comserver\\comdemo.h"
+	dispinterface _ICompletedEvents {
+	properties:
+
+	methods:
+		[id(1)] void  Completed();
+	};
+
+	[
+		version(1.0),
+		custom(0F21F359-AB84-41e8-9A78-36D110E6D2F9, "Wrox.ProCSharp.COMInterop.Server.COMDemo"),
+		uuid(78E88924-824D-46E3-87FD-111AC27D7B7A),
+		helpstring("COMDemo Class")
+	] 
+#line 75 "c:\\procsharp\\cominterop\\comserver\\comserver\\comdemo.h"
+	coclass CCOMDemo {
+		interface IWelcome;
+		interface IMath;
+		[default, source]	interface _ICompletedEvents;
+	};
+
+}
+

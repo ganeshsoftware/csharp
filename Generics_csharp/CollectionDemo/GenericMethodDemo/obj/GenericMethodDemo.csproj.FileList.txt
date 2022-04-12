@@ -1,0 +1,7 @@
+.\bin\Debug\GenericMethodDemo.exe
+.\bin\Debug\GenericMethodDemo.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\GenericMethodDemo.Properties.Resources.resources
+obj\Debug\GenericMethodDemo.csproj.GenerateResource.Cache
+obj\Debug\GenericMethodDemo.exe
+obj\Debug\GenericMethodDemo.pdb

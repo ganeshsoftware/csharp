@@ -1,0 +1,18 @@
+Sealed Class:
+--------------
+
+Why a sealed class?
+----------------------
+
+1) On a class that implements security features, so that the original object cannot be 
+"impersonated".
+
+
+2) To limit the inheritance to the places where it really made full sense, because it 
+becomes expensive performance-wise if left untreated.The sealed keyword tells the CLR 
+that there is no class further down to look for methods, and that speeds things up.
+
+3) NOTE: In most perfomance-enhancing tools on the market nowadays, you will find a 
+checkbox that will seal all your classes that aren't inherited. Be careful though, 
+because if you want to allow plugins or assembly discovery through MEF, 
+you will run into problems.

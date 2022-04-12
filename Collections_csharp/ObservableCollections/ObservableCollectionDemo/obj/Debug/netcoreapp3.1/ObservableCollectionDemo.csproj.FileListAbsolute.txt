@@ -1,0 +1,15 @@
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\bin\Debug\netcoreapp3.1\ObservableCollectionDemo.exe
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\bin\Debug\netcoreapp3.1\ObservableCollectionDemo.deps.json
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\bin\Debug\netcoreapp3.1\ObservableCollectionDemo.runtimeconfig.json
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\bin\Debug\netcoreapp3.1\ObservableCollectionDemo.runtimeconfig.dev.json
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\bin\Debug\netcoreapp3.1\ObservableCollectionDemo.dll
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\bin\Debug\netcoreapp3.1\ObservableCollectionDemo.pdb
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\obj\Debug\netcoreapp3.1\ObservableCollectionDemo.csproj.AssemblyReference.cache
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\obj\Debug\netcoreapp3.1\ObservableCollectionDemo.AssemblyInfoInputs.cache
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\obj\Debug\netcoreapp3.1\ObservableCollectionDemo.AssemblyInfo.cs
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\obj\Debug\netcoreapp3.1\ObservableCollectionDemo.csproj.CoreCompileInputs.cache
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\obj\Debug\netcoreapp3.1\ObservableCollectionDemo.dll
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\obj\Debug\netcoreapp3.1\ObservableCollectionDemo.pdb
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\obj\Debug\netcoreapp3.1\ObservableCollectionDemo.genruntimeconfig.cache
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\obj\Debug\netcoreapp3.1\ObservableCollectionDemo.Form1.resources
+E:\csharp\csharp_collections\ObservableCollections\ObservableCollectionDemo\obj\Debug\netcoreapp3.1\ObservableCollectionDemo.csproj.GenerateResource.cache

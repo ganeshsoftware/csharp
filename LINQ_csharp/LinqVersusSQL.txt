@@ -1,0 +1,13 @@
+----------
+LINQ Query
+----------
+var departments = from i in db.Departments 
+                  where i.Courses.Count > 0 
+                  orderby i.Name 
+                  select i;
+
+
+--------------------------------------
+FLUENT EXPRESSIONS / LAMDA EXPRESSIONS
+--------------------------------------
+var departments = db.Departments.Where(i => i.Courses.Count > 0).OrderBy(i=>i.Name);

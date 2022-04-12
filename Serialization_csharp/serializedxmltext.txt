@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Stock xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <StockId>108</StockId>
+  <StockName>Tata Consultancy services!</StockName>
+  <StockSellingPrice>6543.9</StockSellingPrice>
+  <StockBuyingPrice>5462.89</StockBuyingPrice>
+</Stock>

@@ -1,0 +1,6 @@
+D:\Core_DOTNET\Linq\LinqRestriction\LinqRestriction\bin\Debug\LinqRestriction.exe.config
+D:\Core_DOTNET\Linq\LinqRestriction\LinqRestriction\bin\Debug\LinqRestriction.exe
+D:\Core_DOTNET\Linq\LinqRestriction\LinqRestriction\bin\Debug\LinqRestriction.pdb
+D:\Core_DOTNET\Linq\LinqRestriction\LinqRestriction\obj\Debug\LinqRestriction.csprojResolveAssemblyReference.cache
+D:\Core_DOTNET\Linq\LinqRestriction\LinqRestriction\obj\Debug\LinqRestriction.exe
+D:\Core_DOTNET\Linq\LinqRestriction\LinqRestriction\obj\Debug\LinqRestriction.pdb
